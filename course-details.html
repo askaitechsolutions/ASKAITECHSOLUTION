@@ -37,47 +37,47 @@
 </head>
 
 <body>
- <div class="modal fade" id="getStartedModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header bg-primary text-white">
-        <h5 class="modal-title">Enquiry</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label class="form-label">Full Name</label>
-            <input type="text" class="form-control" placeholder="Enter your name" required>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Email</label>
-            <input type="email" class="form-control" placeholder="Enter your email" required>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Phone</label>
-            <input type="tel" class="form-control" placeholder="Enter your phone" required>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Choose Course</label>
-            <select class="form-select" required>
-              <option selected disabled>Select a course</option>
-              <option>AI & Python Full Stack</option>
-              <option>Web Development</option>
-              <option>Mobile App Development</option>
-              <option>Internship + Live Project with Certification</option>
-              <option>Campus Interview preparation</option>
-              <option>Zero coding knowledge to IT Expert</option>
-              <option>AI Customized Software</option>
-              <option>Others</option>
-            </select>
-          </div>
-          <button type="submit" class="btn btn-primary w-100">Submit Application</button>
-        </form>
+  <div class="modal fade" id="getStartedModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">Enquiry</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form mehod="post" action="registration.php">
+            <div class="mb-3">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Phone</label>
+              <input type="tel" class="form-control" placeholder="Enter your phone" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Choose Course</label>
+              <select class="form-select" required>
+                <option selected disabled>Select a course</option>
+                <option>AI & Python Full Stack</option>
+                <option>Web Development</option>
+                <option>Mobile App Development</option>
+                <option>Internship + Live Project with Certification</option>
+                <option>Campus Interview preparation</option>
+                <option>Zero coding knowledge to IT Expert</option>
+                <option>AI Customized Software</option>
+                <option>Others</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
@@ -95,21 +95,21 @@
           <li><a href="events.html">Events</a></li>
           <li><a href="pricing.html">Pricing</a></li> -->
 
-          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a class="active" href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a class="active" href="services.html#service-details-1">Real Time Project Development</a></li>
+              <li><a href="services.html#service-details-1">Real Time Project Development</a></li>
               <li class="dropdown"><a href="#"><span>Software Development</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="services.html#service-details-2">AI Based Customized Software</a></li>
-                  <li><a href="#">Legal Software</a></li>
-                  <li><a href="#">HRMS</a></li>
-                  <li><a href="#">ERP</a></li>
-                  <li><a href="#">CRMS</a></li>
+                  <li><a href="services.html#service-details-3">Legal Software</a></li>
+                  <li><a href="services.html#service-details-4">HRMS</a></li>
+                  <li><a href="services.html#service-details-5">ERP</a></li>
+                  <li><a href="services.html#service-details-6">CRMS</a></li>
                 </ul>
               </li>
-              <li><a href="#">Search Engine Optimization</a></li>
-              <li><a href="#">Al & machine learning</a></li>
-              <li><a href="#">DevOps & Automation</a></li>
+              <li><a href="services.html#service-details-7">Search Engine Optimization</a></li>
+              <li><a href="services.html#service-details-8">Al & machine learning</a></li>
+              <li><a href="services.html#service-details-9">DevOps & Automation</a></li>
             </ul>
           </li>
           <li><a href="contact.html">Contact</a></li>
@@ -117,23 +117,12 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <button class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#getStartedModal"><i>Get Started</i></button>
-
-
+      <button class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#getStartedModal"><i>Get
+          Started</i></button>
     </div>
   </header><!-- End Header -->
 
   <main id="main">
-
-    <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs" data-aos="fade-in">
-      <div class="container">
-        <h2>Course Details</h2>
-        <p style="font-size: 1rem;">Ready to take the next step? Explore our diverse range of courses designed to help you master new skills and achieve your goals. Whether you're a beginner or looking to advance your expertise, you'll find a course that's right for you.</p>
-          <h6 class="justify-content-center">Browse our full list of courses below to find the perfect fit.</h6> 
-      </div>
-    </div><!-- End Breadcrumbs -->
-
     <!-- ======= Cource Details Section ======= -->
     <section id="Web Development" class="page hidden">
       <div class="container" data-aos="fade-up">
@@ -149,7 +138,7 @@
               dynamic field.
             </p>
           </div>
-          <div class="col-lg-4">
+          <!-- <div class="col-lg-4">
 
             <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Trainer</h5>
@@ -172,9 +161,9 @@
             </div>
 
           </div>
-        </div>
+        </div> -->
 
-      </div>
+        </div>
     </section><!-- End Cource Details Section -->
 
     <!-- ======= Cource Details Tabs Section ======= -->
@@ -282,7 +271,7 @@
               insights—all tailored specifically to your business's unique challenges and goals.
             </p>
           </div>
-          <div class="col-lg-4">
+          <!-- <div class="col-lg-4">
 
             <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Trainer</h5>
@@ -305,9 +294,9 @@
             </div>
 
           </div>
-        </div>
+        </div> -->
 
-      </div>
+        </div>
     </section><!-- End Cource Details Section -->
 
     <!-- ======= Cource Details Tabs Section ======= -->
@@ -418,7 +407,7 @@
           </div>
           <div class="col-lg-4">
 
-            <div class="course-info d-flex justify-content-between align-items-center">
+            <!-- <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Trainer</h5>
               <p><a href="#">Walter White</a></p>
             </div>
@@ -436,7 +425,7 @@
             <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Schedule</h5>
               <p>5.00 pm - 7.00 pm</p>
-            </div>
+            </div> -->
 
           </div>
         </div>
@@ -575,7 +564,7 @@
           </div>
           <div class="col-lg-4">
 
-            <div class="course-info d-flex justify-content-between align-items-center">
+            <!-- <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Trainer</h5>
               <p><a href="#">Walter White</a></p>
             </div>
@@ -593,7 +582,7 @@
             <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Schedule</h5>
               <p>5.00 pm - 7.00 pm</p>
-            </div>
+            </div> -->
 
           </div>
         </div>
@@ -724,7 +713,7 @@
           </div>
           <div class="col-lg-4">
 
-            <div class="course-info d-flex justify-content-between align-items-center">
+            <!-- <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Trainer</h5>
               <p><a href="#">Walter White</a></p>
             </div>
@@ -742,7 +731,7 @@
             <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Schedule</h5>
               <p>5.00 pm - 7.00 pm</p>
-            </div>
+            </div> -->
 
           </div>
         </div>
@@ -862,7 +851,7 @@
           </div>
           <div class="col-lg-4">
 
-            <div class="course-info d-flex justify-content-between align-items-center">
+            <!-- <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Trainer</h5>
               <p><a href="#">Walter White</a></p>
             </div>
@@ -880,7 +869,7 @@
             <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Schedule</h5>
               <p>5.00 pm - 7.00 pm</p>
-            </div>
+            </div> -->
 
           </div>
         </div>
@@ -1021,7 +1010,7 @@
           </div>
           <div class="col-lg-4">
 
-            <div class="course-info d-flex justify-content-between align-items-center">
+            <!-- <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Trainer</h5>
               <p><a href="#">Walter White</a></p>
             </div>
@@ -1039,7 +1028,7 @@
             <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Schedule</h5>
               <p>5.00 pm - 7.00 pm</p>
-            </div>
+            </div> -->
 
           </div>
         </div>
@@ -1172,14 +1161,17 @@
             <img src="assets/img/machine.jpg" class="img-fluid" alt="" style="width: 1100px; height: 533px;">
             <h3>AI & Machine Learning</h3>
             <p>
-              Artificial Intelligence (AI) is a broad field of computer science dedicated to creating systems that can perform tasks that typically require human intelligence.</p>
-              <p> Machine Learning (ML) is a key subset of AI that focuses on building algorithms that can learn from data and improve over time, without being explicitly programmed for every task.</p>
-              <p> Together, they allow us to develop applications that are not just smart, but also adaptive and predictive.
+              Artificial Intelligence (AI) is a broad field of computer science dedicated to creating systems that can
+              perform tasks that typically require human intelligence.</p>
+            <p> Machine Learning (ML) is a key subset of AI that focuses on building algorithms that can learn from data
+              and improve over time, without being explicitly programmed for every task.</p>
+            <p> Together, they allow us to develop applications that are not just smart, but also adaptive and
+              predictive.
             </p>
           </div>
           <div class="col-lg-4">
 
-            <div class="course-info d-flex justify-content-between align-items-center">
+            <!-- <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Trainer</h5>
               <p><a href="#">Walter White</a></p>
             </div>
@@ -1197,7 +1189,7 @@
             <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Schedule</h5>
               <p>5.00 pm - 7.00 pm</p>
-            </div>
+            </div> -->
 
           </div>
         </div>
@@ -1227,7 +1219,7 @@
               <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="tab" href="#tab-38">Data-Driven Insights: </a>
               </li>
-              
+
             </ul>
           </div>
           <div class="col-lg-9 mt-4 mt-lg-0">
@@ -1235,9 +1227,13 @@
               <div class="tab-pane active show" id="tab-34">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>We build and train algorithms that learn from data to find patterns and make intelligent, data-driven predictions..</h3>
-                    <p class="fst-italic">Machine Learning (ML) models are the mathematical engines of AI. They are algorithms trained on data to recognize patterns, make predictions, and make decisions without being explicitly programmed for every single scenario. </p>
-                    <p>Instead of following a rigid set of rules, an ML model learns from examples, similar to how a human brain learns from experience..</p>
+                    <h3>We build and train algorithms that learn from data to find patterns and make intelligent,
+                      data-driven predictions..</h3>
+                    <p class="fst-italic">Machine Learning (ML) models are the mathematical engines of AI. They are
+                      algorithms trained on data to recognize patterns, make predictions, and make decisions without
+                      being explicitly programmed for every single scenario. </p>
+                    <p>Instead of following a rigid set of rules, an ML model learns from examples, similar to how a
+                      human brain learns from experience..</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/course-details-tab-1.png" alt="" class="img-fluid">
@@ -1247,9 +1243,13 @@
               <div class="tab-pane" id="tab-35">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3> We use powerful algorithms to analyze historical data and forecast future outcomes, enabling you to make proactive and data-driven decisions.</h3>
-                    <p class="fst-italic">Predictive analytics is a core component of data science that uses statistical techniques and machine learning algorithms to predict future behavior, trends, and outcomes.</p>
-                    <p>By analyzing patterns in historical data, a predictive model learns to recognize relationships between different variables and then applies that knowledge to new, unseen data to make a prediction.</p>
+                    <h3> We use powerful algorithms to analyze historical data and forecast future outcomes, enabling
+                      you to make proactive and data-driven decisions.</h3>
+                    <p class="fst-italic">Predictive analytics is a core component of data science that uses statistical
+                      techniques and machine learning algorithms to predict future behavior, trends, and outcomes.</p>
+                    <p>By analyzing patterns in historical data, a predictive model learns to recognize relationships
+                      between different variables and then applies that knowledge to new, unseen data to make a
+                      prediction.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/course-details-tab-2.png" alt="" class="img-fluid">
@@ -1259,10 +1259,14 @@
               <div class="tab-pane" id="tab-36">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>We use Natural Language Processing (NLP) to build intelligent systems that can understand, analyze, and respond to human language.
+                    <h3>We use Natural Language Processing (NLP) to build intelligent systems that can understand,
+                      analyze, and respond to human language.
                     </h3>
-                    <p class="fst-italic">Natural Language Processing (NLP) is a branch of artificial intelligence that gives computers the ability to understand, process, and generate human language.</p>
-                    <p> It is what powers virtual assistants, translation software, and smart chatbots. NLP allows a computer to move beyond simple keyword matching to grasp the context, sentiment, and intent behind a conversation.</p>
+                    <p class="fst-italic">Natural Language Processing (NLP) is a branch of artificial intelligence that
+                      gives computers the ability to understand, process, and generate human language.</p>
+                    <p> It is what powers virtual assistants, translation software, and smart chatbots. NLP allows a
+                      computer to move beyond simple keyword matching to grasp the context, sentiment, and intent behind
+                      a conversation.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/course-details-tab-3.png" alt="" class="img-fluid">
@@ -1272,9 +1276,13 @@
               <div class="tab-pane" id="tab-37">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3> We build AI-powered vision systems that can see, interpret, and understand the world through images and videos, transforming visual data into actionable intelligence.</h3>
-                    <p class="fst-italic">Computer Vision is a field of artificial intelligence that trains computers to interpret and understand the visual world.</p>
-                    <p>Just as the human eye and brain work together to see and understand, computer vision algorithms enable machines to extract meaningful information from digital images, videos, and other visual inputs</p>
+                    <h3> We build AI-powered vision systems that can see, interpret, and understand the world through
+                      images and videos, transforming visual data into actionable intelligence.</h3>
+                    <p class="fst-italic">Computer Vision is a field of artificial intelligence that trains computers to
+                      interpret and understand the visual world.</p>
+                    <p>Just as the human eye and brain work together to see and understand, computer vision algorithms
+                      enable machines to extract meaningful information from digital images, videos, and other visual
+                      inputs</p>
                     <p> This technology allows for unprecedented levels of automation, analysis, and security.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -1285,11 +1293,15 @@
               <div class="tab-pane" id="tab-38">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>We transform raw data into a strategic asset, empowering you to make smarter, more confident business decisions.
+                    <h3>We transform raw data into a strategic asset, empowering you to make smarter, more confident
+                      business decisions.
                     </h3>
-                    <p class="fst-italic">Data-driven insights are the actionable knowledge and discoveries derived from analyzing data.</p>
-                    <p> It's the process of moving from simply collecting information to understanding what that information means for your business.</p>
-                    <p>Instead of relying on guesswork or intuition, data-driven insights provide a clear, evidence-based path to informed decision-making.</p>
+                    <p class="fst-italic">Data-driven insights are the actionable knowledge and discoveries derived from
+                      analyzing data.</p>
+                    <p> It's the process of moving from simply collecting information to understanding what that
+                      information means for your business.</p>
+                    <p>Instead of relying on guesswork or intuition, data-driven insights provide a clear,
+                      evidence-based path to informed decision-making.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/course-details-tab-3.png" alt="" class="img-fluid">
@@ -1308,15 +1320,20 @@
 
         <div class="row">
           <div class="col-lg-8">
-            <img src="assets/img/Mobile apk development.jpg" class="img-fluid" alt="" style="width: 1100px; height: 533px;">
+            <img src="assets/img/Mobile apk development.jpg" class="img-fluid" alt=""
+              style="width: 1100px; height: 533px;">
             <h3>Mobile App Development</h3>
             <p>
-              Mobile app development is the process of creating software applications that run on mobile devices such as smartphones and tablets. In an age where a user's primary interaction with the digital world is through their phone, a powerful and well-designed mobile app is crucial for engaging customers, driving sales, and building brand loyalty. We specialize in developing applications that provide a seamless and compelling user experience.
+              Mobile app development is the process of creating software applications that run on mobile devices such as
+              smartphones and tablets. In an age where a user's primary interaction with the digital world is through
+              their phone, a powerful and well-designed mobile app is crucial for engaging customers, driving sales, and
+              building brand loyalty. We specialize in developing applications that provide a seamless and compelling
+              user experience.
             </p>
           </div>
           <div class="col-lg-4">
 
-            <div class="course-info d-flex justify-content-between align-items-center">
+            <!-- <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Trainer</h5>
               <p><a href="#">Walter White</a></p>
             </div>
@@ -1334,7 +1351,7 @@
             <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Schedule</h5>
               <p>5.00 pm - 7.00 pm</p>
-            </div>
+            </div> -->
 
           </div>
         </div>
@@ -1353,14 +1370,15 @@
                 <a class="nav-link active show" data-bs-toggle="tab" href="#tab-39">Platform Expertise:</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-40">User Experience (UX) and User Interface (UI) Design:</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-40">User Experience (UX) and User Interface (UI)
+                  Design:</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="tab" href="#tab-41">Performance and Security: </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="tab" href="#tab-42">Backend Integration:</a>
-              </li> 
+              </li>
             </ul>
           </div>
           <div class="col-lg-9 mt-4 mt-lg-0">
@@ -1368,10 +1386,14 @@
               <div class="tab-pane active show" id="tab-39">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>We specialize in developing applications for the platforms your users love, ensuring native performance and a seamless experience.</h3>
-                    <p class="fst-italic">Platform Expertise refers to a deep understanding of the specific operating systems and ecosystems where applications are built and deployed.</p>
-                    <p>While many developers can write code, true expertise lies in knowing the unique conventions, tools, and performance considerations of each platform.</p>
-                    <p>This is crucial for building applications that feel natural and perform optimally on a user's device.</p>
+                    <h3>We specialize in developing applications for the platforms your users love, ensuring native
+                      performance and a seamless experience.</h3>
+                    <p class="fst-italic">Platform Expertise refers to a deep understanding of the specific operating
+                      systems and ecosystems where applications are built and deployed.</p>
+                    <p>While many developers can write code, true expertise lies in knowing the unique conventions,
+                      tools, and performance considerations of each platform.</p>
+                    <p>This is crucial for building applications that feel natural and perform optimally on a user's
+                      device.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/course-details-tab-1.png" alt="" class="img-fluid">
@@ -1381,11 +1403,18 @@
               <div class="tab-pane" id="tab-40">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>We craft intuitive, engaging, and beautiful digital products that are a joy for users to interact with.</h3>
+                    <h3>We craft intuitive, engaging, and beautiful digital products that are a joy for users to
+                      interact with.</h3>
                     <h4>User Experience (UX) Design:</h4>
-                    <p class="fst-italic">This is the process of enhancing user satisfaction by improving the usability, accessibility, and pleasure provided in the interaction with a product. UX is about the "feel" of the product. It focuses on the user's journey—from their first thought about using an app to how they feel after completing a task.</p>
+                    <p class="fst-italic">This is the process of enhancing user satisfaction by improving the usability,
+                      accessibility, and pleasure provided in the interaction with a product. UX is about the "feel" of
+                      the product. It focuses on the user's journey—from their first thought about using an app to how
+                      they feel after completing a task.</p>
                     <h4>User Interface (UI) Design:</h4>
-                    <p> This is the process of designing the visual elements and interactive parts of a digital product. UI is about the "look" of the product. It focuses on the visual presentation, including typography, colors, buttons, icons, and animations. The goal of UI design is to create a visually appealing interface that guides the user and supports the overall UX.</p>
+                    <p> This is the process of designing the visual elements and interactive parts of a digital product.
+                      UI is about the "look" of the product. It focuses on the visual presentation, including
+                      typography, colors, buttons, icons, and animations. The goal of UI design is to create a visually
+                      appealing interface that guides the user and supports the overall UX.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/course-details-tab-2.png" alt="" class="img-fluid">
@@ -1395,9 +1424,13 @@
               <div class="tab-pane" id="tab-41">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3> We build mobile apps that are not only fast and responsive but also secure, protecting both your users and your business </h3>
-                    <p class="fst-italic">Performance and Security are two critical, non-negotiable pillars of mobile app development.</p>
-                    <p> A slow, buggy app will frustrate users and lead to uninstalls, while a data breach can destroy trust and harm your business's reputation. We treat both as core requirements, not as afterthoughts.</p>
+                    <h3> We build mobile apps that are not only fast and responsive but also secure, protecting both
+                      your users and your business </h3>
+                    <p class="fst-italic">Performance and Security are two critical, non-negotiable pillars of mobile
+                      app development.</p>
+                    <p> A slow, buggy app will frustrate users and lead to uninstalls, while a data breach can destroy
+                      trust and harm your business's reputation. We treat both as core requirements, not as
+                      afterthoughts.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/course-details-tab-3.png" alt="" class="img-fluid">
@@ -1407,9 +1440,14 @@
               <div class="tab-pane" id="tab-42">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>We connect your mobile app to a secure, scalable backend, enabling dynamic features, seamless data management, and a robust user experience.</h3>
-                    <p class="fst-italic">A mobile application is only as powerful as the server it communicates with. Backend integration is the process of connecting a mobile app's frontend (the part the user sees) with the backend (the server, database, and logic that powers the app's features). </p>
-                    <p>This essential connection enables your app to store user data, process transactions, send notifications, and perform complex operations without relying on the mobile device's limited resources.</p>
+                    <h3>We connect your mobile app to a secure, scalable backend, enabling dynamic features, seamless
+                      data management, and a robust user experience.</h3>
+                    <p class="fst-italic">A mobile application is only as powerful as the server it communicates with.
+                      Backend integration is the process of connecting a mobile app's frontend (the part the user sees)
+                      with the backend (the server, database, and logic that powers the app's features). </p>
+                    <p>This essential connection enables your app to store user data, process transactions, send
+                      notifications, and perform complex operations without relying on the mobile device's limited
+                      resources.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/course-details-tab-4.png" alt="" class="img-fluid">
@@ -1422,7 +1460,7 @@
       </div>
     </section><!-- End Cource Details Tabs Section -->
 
-    
+
     <!-- ======= Cource Details Section ======= -->
     <section id="details-9" class="page hidden">
       <div class="container" data-aos="fade-up">
@@ -1432,12 +1470,16 @@
             <img src="assets/img/data.jpg" class="img-fluid" alt="" style="width: 1100px; height: 533px;">
             <h3>Database Management</h3>
             <p>
-              Mobile app development is the process of creating software applications that run on mobile devices such as smartphones and tablets. In an age where a user's primary interaction with the digital world is through their phone, a powerful and well-designed mobile app is crucial for engaging customers, driving sales, and building brand loyalty. We specialize in developing applications that provide a seamless and compelling user experience.
+              Mobile app development is the process of creating software applications that run on mobile devices such as
+              smartphones and tablets. In an age where a user's primary interaction with the digital world is through
+              their phone, a powerful and well-designed mobile app is crucial for engaging customers, driving sales, and
+              building brand loyalty. We specialize in developing applications that provide a seamless and compelling
+              user experience.
             </p>
           </div>
           <div class="col-lg-4">
 
-            <div class="course-info d-flex justify-content-between align-items-center">
+            <!-- <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Trainer</h5>
               <p><a href="#">Walter White</a></p>
             </div>
@@ -1455,11 +1497,10 @@
             <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Schedule</h5>
               <p>5.00 pm - 7.00 pm</p>
-            </div>
+            </div> -->
 
           </div>
         </div>
-
       </div>
     </section><!-- End Cource Details Section -->
     <!-- ======= Cource Details Tabs Section ======= -->
@@ -1480,7 +1521,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="tab" href="#tab-46">Security & Backups:</a>
-              </li> 
+              </li>
             </ul>
           </div>
           <div class="col-lg-9 mt-4 mt-lg-0">
@@ -1488,9 +1529,13 @@
               <div class="tab-pane active show" id="tab-43">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>We implement robust security measures and reliable backup systems to protect your data from loss, corruption, and unauthorized access.</h3>
-                    <p class="fst-italic"> In the world of data, security and backups are two sides of the same coin, both essential for protecting your most valuable asset.</p>
-                    <p>Security is about preventing unauthorized access and malicious activity, while backups are your safety net, ensuring you can recover your data if a security breach, hardware failure, or human error occurs.</p>
+                    <h3>We implement robust security measures and reliable backup systems to protect your data from
+                      loss, corruption, and unauthorized access.</h3>
+                    <p class="fst-italic"> In the world of data, security and backups are two sides of the same coin,
+                      both essential for protecting your most valuable asset.</p>
+                    <p>Security is about preventing unauthorized access and malicious activity, while backups are your
+                      safety net, ensuring you can recover your data if a security breach, hardware failure, or human
+                      error occurs.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/course-details-tab-1.png" alt="" class="img-fluid">
@@ -1500,9 +1545,14 @@
               <div class="tab-pane" id="tab-44">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>We help you choose the ideal database technology that best fits your application’s unique needs for performance, scale, and data type.</h3>
-                    <p class="fst-italic">Database selection is the critical process of choosing the most suitable database for a project. The right choice can lead to a fast, scalable, and reliable application, while the wrong one can result in performance bottlenecks and unnecessary complexity.</p>
-                    <p> The best fit depends on several factors, including the type of data you're storing, the volume of data, and how the data will be used. The primary choice is usually between Relational (SQL) and Non-Relational (NoSQL) databases.</p>
+                    <h3>We help you choose the ideal database technology that best fits your application’s unique needs
+                      for performance, scale, and data type.</h3>
+                    <p class="fst-italic">Database selection is the critical process of choosing the most suitable
+                      database for a project. The right choice can lead to a fast, scalable, and reliable application,
+                      while the wrong one can result in performance bottlenecks and unnecessary complexity.</p>
+                    <p> The best fit depends on several factors, including the type of data you're storing, the volume
+                      of data, and how the data will be used. The primary choice is usually between Relational (SQL) and
+                      Non-Relational (NoSQL) databases.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/course-details-tab-2.png" alt="" class="img-fluid">
@@ -1512,9 +1562,14 @@
               <div class="tab-pane" id="tab-45">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3> We optimize your database and application to ensure fast query times, high throughput, and a smooth user experience. </h3>
-                    <p class="fst-italic">Performance tuning is the process of improving the speed and efficiency of a system. In the context of databases, it's about making sure your application can retrieve, update, and store data as quickly as possible, even under heavy load.</p>
-                    <p>A slow database can cause an entire application to lag, frustrating users and potentially leading to lost business. We use a proactive approach to identify and eliminate performance bottlenecks.</p>
+                    <h3> We optimize your database and application to ensure fast query times, high throughput, and a
+                      smooth user experience. </h3>
+                    <p class="fst-italic">Performance tuning is the process of improving the speed and efficiency of a
+                      system. In the context of databases, it's about making sure your application can retrieve, update,
+                      and store data as quickly as possible, even under heavy load.</p>
+                    <p>A slow database can cause an entire application to lag, frustrating users and potentially leading
+                      to lost business. We use a proactive approach to identify and eliminate performance bottlenecks.
+                    </p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/course-details-tab-3.png" alt="" class="img-fluid">
@@ -1524,9 +1579,14 @@
               <div class="tab-pane" id="tab-46">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>We connect your mobile app to a secure, scalable backend, enabling dynamic features, seamless data management, and a robust user experience.</h3>
-                    <p class="fst-italic">A mobile application is only as powerful as the server it communicates with. Backend integration is the process of connecting a mobile app's frontend (the part the user sees) with the backend (the server, database, and logic that powers the app's features). </p>
-                    <p>This essential connection enables your app to store user data, process transactions, send notifications, and perform complex operations without relying on the mobile device's limited resources.</p>
+                    <h3>We connect your mobile app to a secure, scalable backend, enabling dynamic features, seamless
+                      data management, and a robust user experience.</h3>
+                    <p class="fst-italic">A mobile application is only as powerful as the server it communicates with.
+                      Backend integration is the process of connecting a mobile app's frontend (the part the user sees)
+                      with the backend (the server, database, and logic that powers the app's features). </p>
+                    <p>This essential connection enables your app to store user data, process transactions, send
+                      notifications, and perform complex operations without relying on the mobile device's limited
+                      resources.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/course-details-tab-4.png" alt="" class="img-fluid">
@@ -1538,6 +1598,1040 @@
         </div>
       </div>
     </section><!-- End Cource Details Tabs Section -->
+
+    <section id="CRMS" class="course-details">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-8">
+            <img src="assets/img/crm.jpg" class="img-fluid" alt="">
+            <h3>Customer Relationship Management Software (CRMS)</h3>
+            <p>
+              We provide specialized training and services in Customer Relationship Management Software (CRMS),
+              empowering businesses to streamline customer interactions, manage sales pipelines, and improve client
+              satisfaction. Our course covers CRM setup, data handling, automation, and reporting tools. With hands-on
+              learning, we ensure you gain skills in customizing and managing CRMS solutions that drive business growth,
+              strengthen relationships, and enhance decision-making with real-time insights.
+            </p>
+          </div>
+          <!-- <div class="col-lg-4">
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Trainer</h5>
+              <p><a href="#">Walter White</a></p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Course Fee</h5>
+              <p>$165</p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Available Seats</h5>
+              <p>30</p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Schedule</h5>
+              <p>5.00 pm - 7.00 pm</p>
+            </div>
+
+          </div> -->
+        </div>
+
+      </div>
+    </section>
+    <!-- ======= Cource Details Tabs Section ======= -->
+    <section id="cource-details-tabs" class="cource-details-tabs">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-47">Core CRM Concepts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-48">Practical CRM Training</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-49">Business Process Integration</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-50">Advanced CRM Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-51">Career-Oriented Guidance</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-47">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Core CRM Concepts</h3>
+                    <!-- <p class="fst-italic">We provide comprehensive training on CRMS to help businesses strengthen customer relationships, streamline communication, and boost sales. Learners understand how CRMS supports customer satisfaction and retention.</p> -->
+                    <p>We provide detailed sessions on the fundamentals of Customer Relationship Management. Learners
+                      understand how CRMS helps businesses organize, track, and optimize customer interactions. The
+                      training covers lead management, contact management, customer data handling, and reporting
+                      features. By mastering these core concepts, learners can contribute to increasing business
+                      efficiency, improving customer satisfaction, and enhancing overall sales productivity within
+                      different organizational setups.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-1.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-48">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Practical CRM Training</h3>
+                    <!-- <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p> -->
+                    <p>We provide practical training with hands-on exercises on popular CRM platforms such as
+                      Salesforce, Zoho, or HubSpot. Through live simulations, learners gain experience in handling
+                      leads, automating workflows, generating reports, and managing customer communication channels.
+                      This practical exposure ensures participants are well-prepared to work in real-time environments.
+                      By applying learned skills, professionals can directly impact organizational growth and improve
+                      customer service quality.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-49">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Business Process Integration</h3>
+                    <!-- <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p> -->
+                    <p>We provide training on integrating CRMS with other business tools and applications such as ERP,
+                      HRMS, and marketing software. Learners gain the ability to streamline processes by connecting
+                      sales, customer support, and marketing into one system. This integration-focused learning improves
+                      data accuracy, enhances collaboration across teams, and helps organizations achieve better
+                      customer insights for strategic decision-making.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-3.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-50">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3> Advanced CRM Features</h3>
+                    <!-- <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p> -->
+                    <p>We provide advanced training on analytics, reporting dashboards, and customer behavior tracking.
+                      Learners explore features such as sales forecasting, pipeline management, and marketing
+                      automation. These modules equip participants with the expertise to analyze data trends, measure
+                      customer loyalty, and boost engagement strategies. By mastering advanced features, professionals
+                      enhance business intelligence and make data-driven decisions for long-term organizational success.
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-4.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-51">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Career-Oriented Guidance</h3>
+                    <!-- <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p> -->
+                    <p>We provide career-oriented guidance that prepares learners for CRM-related job roles such as CRM
+                      Analyst, CRM Consultant, or Customer Relationship Manager. Our program includes resume
+                      preparation, interview support, and exposure to industry best practices. By combining technical
+                      knowledge with business communication skills, participants build the confidence required to secure
+                      high-paying opportunities and contribute meaningfully to their organizations customer success
+                      strategies.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-5.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="HRMS" class="course-details">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-8">
+            <img src="assets/img/hrm.jpg" class="img-fluid" alt="">
+            <h3>HRMS Course Details</h3>
+            <p>
+              We provide specialized HRMS (Human Resource Management System) training to equip learners with skills in
+              employee management, payroll processing, attendance tracking, and performance monitoring. The course is
+              designed for HR professionals, managers, and freshers who want to enhance their knowledge of digital HR
+              solutions. Through hands-on projects and live scenarios, participants gain expertise in automating HR
+              processes, ensuring compliance, and driving workforce efficiency.
+            </p>
+          </div>
+          <!-- <div class="col-lg-4">
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Trainer</h5>
+              <p><a href="#">Walter White</a></p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Course Fee</h5>
+              <p>$165</p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Available Seats</h5>
+              <p>30</p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Schedule</h5>
+              <p>5.00 pm - 7.00 pm</p>
+            </div>
+
+          </div> -->
+        </div>
+
+      </div>
+    </section>
+    <!-- ======= Cource Details Tabs Section ======= -->
+    <section id="cource-details-tabs" class="cource-details-tabs">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-52">Core HRMS Training</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-53">Practical System Exposure</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-54">HR Analytics Training</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-55">Integration Knowledge</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-56">Career Development Support</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-52">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Core HRMS Training</h3>
+                    <!-- <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p> -->
+                    <p>We provide a solid foundation in HRMS, covering modules like employee information management,
+                      payroll systems, leave tracking, and recruitment processes. Participants understand how HRMS
+                      simplifies HR operations by automating repetitive tasks and improving data accuracy. By mastering
+                      these basics, learners can effectively manage workforce records, enhance organizational
+                      productivity, and minimize manual errors in employee-related processes.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-1.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-53">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Practical System Exposure</h3>
+                    <!-- <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p> -->
+                    <p>We provide practical exposure through hands-on training on leading HRMS platforms. Learners
+                      practice real-world scenarios such as payroll calculations, benefits management, and employee
+                      performance reviews. Each session includes case studies and live system demonstrations, allowing
+                      participants to develop job-ready skills. This hands-on approach ensures learners can directly
+                      apply HRMS knowledge in real business environments and meet industry expectations.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-54">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>HR Analytics Training</h3>
+                    <!-- <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p> -->
+                    <p>We provide training on HR analytics to help learners track employee performance, engagement, and
+                      retention trends. Participants gain skills in generating detailed reports and dashboards that
+                      assist management in decision-making. By understanding HR data analysis, learners can contribute
+                      to better workforce planning, identify potential gaps, and improve overall organizational
+                      efficiency with data-driven strategies.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-3.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-55">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Integration Knowledge</h3>
+                    <!-- <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p> -->
+                    <p>We provide knowledge of integrating HRMS with ERP, Payroll, and Attendance Management Systems.
+                      Learners understand how interconnected HR processes ensure seamless workflows across departments.
+                      This module equips participants with the ability to improve HR compliance, synchronize workforce
+                      data, and enhance collaboration within organizations. By mastering integrations, professionals can
+                      contribute to more efficient and accurate HR management.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-4.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-56">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Career Development Support</h3>
+                    <!-- <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p> -->
+                    <p>We provide complete career development support for learners aiming to become HR Analysts, HRMS
+                      Specialists, or HR Managers. Our program includes resume preparation, interview guidance, and
+                      soft-skill enhancement. With a combination of technical HRMS knowledge and professional
+                      development, participants gain the confidence to secure job opportunities and contribute
+                      effectively to HR transformation initiatives in organizations.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-5.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="ERP" class="course-details">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-8">
+            <img src="assets/img/erp.jpg" class="img-fluid" alt="">
+            <h3>ERP Course Details</h3>
+            <p>
+              We provide complete ERP (Enterprise Resource Planning) training to help learners master business process
+              automation, financial management, inventory control, and supply chain operations. Designed for students,
+              professionals, and entrepreneurs, our course blends theory with real-world case studies. Participants gain
+              practical skills in managing enterprise resources efficiently, ensuring smoother business workflows, and
+              learning to use ERP systems to drive productivity and organizational success.
+            </p>
+          </div>
+          <!-- <div class="col-lg-4">
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Trainer</h5>
+              <p><a href="#">Walter White</a></p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Course Fee</h5>
+              <p>$165</p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Available Seats</h5>
+              <p>30</p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Schedule</h5>
+              <p>5.00 pm - 7.00 pm</p>
+            </div>
+
+          </div> -->
+        </div>
+
+      </div>
+    </section>
+    <!-- ======= Cource Details Tabs Section ======= -->
+    <section id="cource-details-tabs" class="cource-details-tabs">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-57">ERP Fundamentals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-58">Hands-On ERP Training</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-59">Business Process Mapping</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-60">Advanced ERP Analytics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-61">Career Advancement Guidance</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-57">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>ERP Fundamentals</h3>
+                    <!-- <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p> -->
+                    <p>We provide a strong foundation in ERP concepts, covering modules such as finance, human
+                      resources, inventory, and procurement. Learners understand how ERP integrates multiple business
+                      functions into one unified system, reducing duplication of data and errors. This training builds
+                      awareness of ERP benefits, including improved efficiency, transparency, and streamlined
+                      operations. By mastering ERP fundamentals, learners prepare themselves for advanced modules and
+                      practical implementation.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-1.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-58">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Hands-On ERP Training</h3>
+                    <!-- <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p> -->
+                    <p>We provide hands-on training with ERP platforms like SAP, Oracle, and Microsoft Dynamics.
+                      Participants engage in practical sessions that simulate real organizational workflows. From
+                      managing purchase orders to monitoring sales pipelines, learners get practical exposure to key ERP
+                      modules. This approach ensures that participants gain confidence in handling ERP systems and
+                      applying their knowledge effectively in real workplace environments.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-59">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Business Process Mapping</h3>
+                    <!-- <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p> -->
+                    <p>We provide training in business process mapping and ERP customization. Learners explore how ERP
+                      systems can be tailored to meet specific organizational needs. With case-based exercises,
+                      participants learn to analyze business challenges and configure ERP solutions accordingly. This
+                      module equips learners with skills to align ERP workflows with business objectives, ensuring
+                      companies achieve higher efficiency and growth.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-3.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-60">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Advanced ERP Analytics</h3>
+                    <!-- <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p> -->
+                    <p>We provide training in ERP reporting and analytics, enabling learners to make data-driven
+                      decisions. Participants learn how to generate dashboards, monitor KPIs, and analyze operational
+                      efficiency. With a focus on predictive insights and performance monitoring, this training equips
+                      learners to provide valuable recommendations that improve business outcomes. Advanced ERP
+                      analytics ensures participants can help organizations stay competitive in evolving markets.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-4.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-61">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Career Advancement Guidance</h3>
+                    <!-- <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p> -->
+                    <p>We provide career-focused guidance for ERP professionals, helping them secure roles like ERP
+                      Consultant, ERP Analyst, or Business Process Manager. Learners receive interview preparation,
+                      resume-building support, and exposure to ERP project lifecycles. With a combination of technical
+                      skills and business process knowledge, participants gain an edge in the job market and are
+                      prepared to contribute effectively to enterprise-level projects.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-5.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="details-10" class="course-details">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-8">
+            <img src="assets/img/phy.jpg" class="img-fluid" alt="">
+            <h3>Pharmacy Software Course Details</h3>
+            <p>
+              We provide comprehensive Pharmacy Software training designed for pharmacists, healthcare professionals,
+              and IT learners. This course covers digital pharmacy management, including inventory tracking,
+              prescription handling, billing systems, and reporting. Learners gain knowledge of real-world applications
+              to streamline pharmaceutical operations. With practical exposure to software tools and case studies,
+              participants become proficient in managing pharmacies efficiently, ensuring accuracy in medicine
+              distribution, and improving patient services.
+            </p>
+          </div>
+          <!-- <div class="col-lg-4">
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Trainer</h5>
+              <p><a href="#">Walter White</a></p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Course Fee</h5>
+              <p>$165</p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Available Seats</h5>
+              <p>30</p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Schedule</h5>
+              <p>5.00 pm - 7.00 pm</p>
+            </div>
+
+          </div> -->
+        </div>
+
+      </div>
+    </section>
+    <!-- ======= Cource Details Tabs Section ======= -->
+    <section id="cource-details-tabs" class="cource-details-tabs">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-62">Pharmacy Operations Training</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-63">Practical Software Exposure</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-64">Compliance and Reporting Modules</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-65">Integration with Healthcare Systems</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-66">Career-Focused Learning</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-62">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Pharmacy Operations Training</h3>
+                    <!-- <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p> -->
+                    <p>We provide detailed training on core pharmacy functions such as prescription entry, inventory
+                      management, and billing. Learners understand how pharmacy software ensures accuracy in medicine
+                      dispensing and reduces errors in prescription handling. By mastering these operations,
+                      participants can support better patient safety and enhance the efficiency of pharmacy services in
+                      retail or hospital setups.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-1.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-63">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Practical Software Exposure</h3>
+                    <!-- <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p> -->
+                    <p>We provide hands-on training with leading pharmacy software platforms. Learners practice
+                      real-world scenarios, including handling prescription requests, managing stock levels, and
+                      generating invoices. By working directly on software tools, participants develop job-ready skills
+                      that can be applied immediately in pharmacies or healthcare institutions, making them valuable
+                      assets to employers.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-64">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Compliance and Reporting Modules</h3>
+                    <!-- <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p> -->
+                    <p>We provide training on compliance features and report generation within pharmacy software.
+                      Participants learn how to maintain medical records, track sales, and ensure regulatory compliance.
+                      By mastering reporting modules, learners contribute to accurate financial tracking and audit
+                      readiness, which are crucial for legal and business success in pharmaceutical environments.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-3.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-65">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Integration with Healthcare Systems</h3>
+                    <!-- <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p> -->
+                    <p>We provide knowledge of integrating pharmacy software with hospital and healthcare management
+                      systems. Learners understand how seamless integration improves patient records, reduces
+                      duplication, and supports better healthcare outcomes. This module prepares learners to manage
+                      interconnected healthcare systems efficiently and contribute to better collaboration between
+                      doctors, pharmacies, and patients.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-4.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-66">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Career-Focused Learning</h3>
+                    <!-- <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p> -->
+                    <p>We provide career-focused learning pathways for pharmacy professionals aiming to become Pharmacy
+                      Software Specialists or Healthcare IT Support staff. Our training ensures participants not only
+                      master software tools but also gain skills in customer service, compliance, and data management,
+                      preparing them for rewarding careers in healthcare technology.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-5.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="details-11" class="course-details">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-8">
+            <img src="assets/img/law.jpg" class="img-fluid" alt="">
+            <h3>Legal Software Course Details</h3>
+            <p>We provide specialized Legal Software training to equip learners with the skills needed to manage legal
+              documents, case records, billing, and compliance workflows. Designed for law students, paralegals, and
+              professionals, this course focuses on digital solutions that simplify legal operations. With practical
+              case studies and system demonstrations, participants gain knowledge in document automation, e-discovery,
+              and practice management, making them efficient in modern legal environments.
+            </p>
+          </div>
+          <!-- <div class="col-lg-4">
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Trainer</h5>
+              <p><a href="#">Walter White</a></p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Course Fee</h5>
+              <p>$165</p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Available Seats</h5>
+              <p>30</p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Schedule</h5>
+              <p>5.00 pm - 7.00 pm</p>
+            </div>
+
+          </div> -->
+        </div>
+
+      </div>
+    </section>
+    <!-- ======= Cource Details Tabs Section ======= -->
+    <section id="cource-details-tabs" class="cource-details-tabs">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-67">Legal Process Training</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-68">Practical Software Modules</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-69">Document Automation Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-70">Compliance and Security Training</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-71">Career Development Support</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-67">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Legal Process Training</h3>
+                    <!-- <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p> -->
+                    <p>We provide comprehensive training in managing legal processes using software platforms. Learners
+                      understand how to handle client records, schedule hearings, and manage case files digitally. By
+                      mastering these processes, participants reduce manual paperwork and ensure more efficient case
+                      management, which benefits both legal practitioners and their clients.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-1.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-68">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Practical Software Modules</h3>
+                    <!-- <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p> -->
+                    <p>We provide hands-on exposure to popular legal software tools. Participants work on modules like
+                      billing, time tracking, and client communication. Real-time exercises ensure learners gain
+                      practical experience in using tools designed for law firms and legal departments. This training
+                      helps participants adopt digital practices that improve accuracy and efficiency.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-69">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Document Automation Skills</h3>
+                    <!-- <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p> -->
+                    <p>We provide training in document automation and e-discovery. Learners explore how legal software
+                      streamlines drafting contracts, agreements, and pleadings. Automation reduces repetitive work and
+                      ensures accuracy. By mastering these tools, participants can handle large document volumes
+                      effectively, saving time and resources for legal teams.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-3.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-70">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Compliance and Security Training</h3>
+                    <!--<p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p> -->
+                    <p>We provide knowledge of compliance and data security features within legal software. Participants
+                      learn to maintain confidentiality, track regulatory requirements, and generate audit-ready
+                      reports. This ensures learners are equipped to handle sensitive client data securely and uphold
+                      ethical standards in legal practice.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-4.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-71">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Career Development Support</h3>
+                    <!-- <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p> -->
+                    <p>We provide career development support for learners aiming to work as Legal Analysts, Paralegals,
+                      or Law Office Administrators. Our course includes interview preparation, resume building, and
+                      industry exposure. By combining technical and legal knowledge, participants gain a competitive
+                      advantage in law firms and corporate legal departments.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/course-details-tab-5.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="details-12" class="page hidden">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-8">
+            <img src="assets/img/hospital.jpg" class="img-fluid" alt="" style="width: 1100px; height: 533px;">
+            <h3>Hospital Management Software</h3>
+            <p>
+            Hospital Management Software (HMS) is a comprehensive, integrated system designed to manage all aspects of a hospital's operations. From patient registration and appointment scheduling to electronic health records (EHR) and billing, an HMS replaces fragmented, paper-based processes with a single, unified digital platform. The goal is to improve the quality of patient care, increase administrative efficiency, and provide real-time visibility into the hospital's performance.
+            </p>
+          </div>
+          <!-- <div class="col-lg-4">
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Trainer</h5>
+              <p><a href="#">Walter White</a></p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Course Fee</h5>
+              <p>$165</p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Available Seats</h5>
+              <p>30</p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Schedule</h5>
+              <p>5.00 pm - 7.00 pm</p>
+            </div>
+
+          </div>
+        </div> -->
+
+        </div>
+    </section><!-- End Cource Details Section -->
+
+    <!-- ======= Cource Details Tabs Section ======= -->
+    <section id="cource-details-tabs" class="cource-details-tabs">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-72">Patient Management</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-73">Electronic Health Records </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-74">Appointment and Scheduling</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-75">Billing and Financial Management</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-76">Pharmacy and Inventory Management</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-72">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>We build integrated solutions that centralize patient information, streamline workflows, and ensure a seamless healthcare experience.</h3>
+                    <p class="fst-italic">Patient Management is the core function of any Hospital Management Software (HMS). It is the process of handling all administrative and clinical tasks related to a patient's journey, from their first interaction with the hospital to their final discharge. A modern patient management system replaces fragmented paper records and manual processes with a single, unified digital platform that improves efficiency, enhances data accuracy, and supports coordinated care.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/course-details-tab-1.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-73">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>We build secure and integrated EHR systems that digitize patient medical information, ensuring accuracy, accessibility, and coordinated care.</h3>
+                    <p class="fst-italic">Electronic Health Records (EHR) are a digital version of a patient's paper chart. More than just a simple medical record, an EHR is a dynamic, real-time, and comprehensive record of a patient's health journey. It contains a patient's medical history, diagnoses, medications, treatment plans, immunization dates, allergies, and lab results. By centralizing this information, an EHR enables secure, instant access for authorized healthcare providers, leading to more informed decision-making and better patient outcomes.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/course-details-tab-2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-74">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>We build intelligent systems that automate scheduling, reduce no-shows, and optimize resource utilization for healthcare providers.
+                    </h3>
+                    <p class="fst-italic">Appointment and Scheduling is a critical function for any healthcare facility. An inefficient scheduling process can lead to long patient wait times, frustrated staff, and underutilized resources. Our integrated systems automate and optimize the entire scheduling workflow, ensuring a seamless experience for both patients and healthcare professionals.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/course-details-tab-3.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-75">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>We build integrated software that automates billing, manages claims, and provides real-time financial insights for healthcare facilities.</h3>
+                    <p class="fst-italic">Billing and Financial Management is a core component of a modern Hospital Management Software (HMS). It is the process of managing all financial transactions within a healthcare facility, from patient billing and insurance claims to accounts payable and financial reporting. An efficient system is crucial for a hospital's financial health, ensuring a predictable revenue stream and reducing administrative overhead.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/course-details-tab-4.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-76">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>We build integrated solutions that automate pharmacy operations, optimize medical supply levels, and ensure critical resources are always available</h3>
+                    <p class="fst-italic">Pharmacy and Inventory Management is a vital function within any hospital or healthcare facility. It is the process of managing the hospital's entire stock of medications, medical supplies, and equipment. An inefficient system can lead to medication errors, costly overstocking, or, most critically, a shortage of vital supplies. Our integrated solutions automate this process, ensuring accuracy, optimizing stock levels, and providing a clear, real-time view of your entire inventory.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/course-details-tab-4.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cource Details Tabs Section -->
+
+
+        <section id="details-15" class="course-details">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-8">
+            <img src="assets/img/law.jpg" class="img-fluid" alt="">
+            <h3>Search Engine Optimization</h3>
+            <p>In depth Search Engine Optimization (SEO) training tailored for digital marketers, entrepreneurs, and students looking to improve online visibility. This course covers keyword research, content optimization, technical SEO, and link-building strategies. Learners gain practical knowledge of search engine algorithms and ranking factors. With real-world projects and analytics tools, participants acquire the skills needed to boost website performance, drive traffic, and achieve measurable marketing success.
+
+            </p>
+          </div>
+          <!-- <div class="col-lg-4">
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Trainer</h5>
+              <p><a href="#">Walter White</a></p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Course Fee</h5>
+              <p>$165</p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Available Seats</h5>
+              <p>30</p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Schedule</h5>
+              <p>5.00 pm - 7.00 pm</p>
+            </div>
+
+          </div> -->
+        </div>
+
+      </div>
+    </section>
+    <!-- ======= Cource Details Tabs Section ======= -->
+    <section id="cource-details-tabs" class="cource-details-tabs">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-78">Sales and Demand Forecasting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-79">Customer Behavior Prediction</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-80">Risk Management and Fraud Detection</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-81">Predictive Maintenance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-82">Resource Optimization</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-78">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>We build intelligent models that predict future sales and demand, empowering you to optimize inventory, production, and resource planning.</h3>
+                    <!-- <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p> -->
+                    <p>Sales and Demand Forecasting is the process of predicting future sales revenue and customer demand. While sales forecasting is focused on predicting the number of units or monetary value of sales, demand forecasting is a broader prediction of customer demand for a product or service. Both are critical for a business to move from reactive decision-making to a proactive, data-driven strategy. Accurate forecasting is the foundation for optimizing everything from inventory and production to staffing and financial planning.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/course-details-tab-1.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-79">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>We use intelligent models to analyze your customer data and predict future actions, empowering you to personalize experiences and drive loyalty.</h3>
+                    <!-- <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p> -->
+                    <p>Customer Behavior Prediction is the process of using data analytics, machine learning, and predictive modeling to forecast how customers are likely to act in the future. Instead of simply reacting to customer actions, businesses can use these insights to proactively anticipate needs, personalize interactions, and prevent issues like customer churn. This is a crucial strategy for moving from a one-size-fits-all approach to a highly targeted, data-driven customer engagement model.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/course-details-tab-2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-80">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>We build intelligent systems that proactively identify and mitigate risks, protecting your business from financial loss and reputational damage.</h3>
+                    <!-- <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p> -->
+                    <p>Risk Management and Fraud Detection is a crucial discipline for any business that handles transactions or sensitive data. In today's digital landscape, fraudulent activities are becoming increasingly sophisticated. We leverage AI and machine learning to move beyond simple rule-based systems and build intelligent solutions that can proactively identify and mitigate risks, protecting your business from financial loss and preserving customer trust.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/course-details-tab-3.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-81">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3> We build intelligent systems that forecast equipment failure, enabling you to perform maintenance proactively and prevent costly downtime.</h3>
+                    <!--<p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p> -->
+                    <p>Predictive Maintenance is an advanced strategy that uses data analytics and machine learning to predict when a piece of equipment is likely to fail. Unlike a traditional "break-fix" approach, where you wait for a problem to occur, or a preventive approach, which relies on a fixed maintenance schedule, predictive maintenance allows you to perform maintenance only when it's needed. This optimizes your resources, minimizes downtime, and extends the lifespan of your assets.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/course-details-tab-4.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-82">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>We build intelligent systems that analyze and optimize your resources—from computing power to human capital—to maximize efficiency and reduce costs.</h3>
+                    <!-- <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p> -->
+                    <p>Resource optimization is the process of using your available assets as efficiently as possible to achieve your business goals. In a world where every dollar and every minute counts, a streamlined approach to managing your resources—be they technological, financial, or human—is a key driver of profitability and a source of competitive advantage. We leverage AI and data analytics to move beyond simple allocation and build smart systems that can predict needs and dynamically reallocate resources in real-time</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/course-details-tab-5.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -1573,12 +2667,17 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="services.html#service-details-1">Real Time Project
-                  Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">AI Based Customized Software</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Search Engine Optimization</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Al & machine learning</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">DevOps & Automation</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html#service-details-1">Real
+                  Time Project Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html#service-details-2">AI Based Customized
+                  Software</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html#service-details-7">Search Engine
+                  Optimization</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html#service-details-8">Al & machine
+                  learning</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html#service-details-9">DevOps & Automation</a>
+              </li>
             </ul>
           </div>
 
@@ -1598,7 +2697,7 @@
 
       <div class="me-md-auto text-center text-md-start">
         <div class="copyright">
-          &copy; Copyright <strong><span>AskAI Tech solutions pvt.ltd</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>AskAI</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
           Designed by <a href="#">AskAI</a>

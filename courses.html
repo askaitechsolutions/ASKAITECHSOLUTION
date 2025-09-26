@@ -38,46 +38,46 @@
 
 <body>
   <div class="modal fade" id="getStartedModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header bg-primary text-white">
-        <h5>Enquiry</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label class="form-label">Full Name</label>
-            <input type="text" class="form-control" placeholder="Enter your name" required>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Email</label>
-            <input type="email" class="form-control" placeholder="Enter your email" required>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Phone</label>
-            <input type="tel" class="form-control" placeholder="Enter your phone" required>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Choose Course</label>
-            <select class="form-select" required>
-              <option selected disabled>Select a course</option>
-              <option>AI & Python Full Stack</option>
-              <option>Web Development</option>
-              <option>Mobile App Development</option>
-              <option>Internship + Live Project with Certification</option>
-              <option>Campus Interview preparation</option>
-              <option>Zero coding knowledge to IT Expert</option>
-              <option>AI Customized Software</option>
-              <option>Others</option>
-            </select>
-          </div>
-          <button type="submit" class="btn btn-primary w-100">Submit Application</button>
-        </form>
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">Enquiry</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form mehod="post" action="registration.php">
+            <div class="mb-3">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Phone</label>
+              <input type="tel" class="form-control" placeholder="Enter your phone" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Choose Course</label>
+              <select class="form-select" required>
+                <option selected disabled>Select a course</option>
+                <option>AI & Python Full Stack</option>
+                <option>Web Development</option>
+                <option>Mobile App Development</option>
+                <option>Internship + Live Project with Certification</option>
+                <option>Campus Interview preparation</option>
+                <option>Zero coding knowledge to IT Expert</option>
+                <option>AI Customized Software</option>
+                <option>Others</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
@@ -95,21 +95,21 @@
           <li><a href="events.html">Events</a></li>
           <li><a href="pricing.html">Pricing</a></li> -->
 
-          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a class="active" href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a class="active" href="services.html#service-details-1">Real Time Project Development</a></li>
+              <li><a href="services.html#service-details-1">Real Time Project Development</a></li>
               <li class="dropdown"><a href="#"><span>Software Development</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="services.html#service-details-2">AI Based Customized Software</a></li>
-                  <li><a href="#">Legal Software</a></li>
-                  <li><a href="#">HRMS</a></li>
-                  <li><a href="#">ERP</a></li>
-                  <li><a href="#">CRMS</a></li>
+                  <li><a href="services.html#service-details-3">Legal Software</a></li>
+                  <li><a href="services.html#service-details-4">HRMS</a></li>
+                  <li><a href="services.html#service-details-5">ERP</a></li>
+                  <li><a href="services.html#service-details-6">CRMS</a></li>
                 </ul>
               </li>
-              <li><a href="#">Search Engine Optimization</a></li>
-              <li><a href="#">Al & machine learning</a></li>
-              <li><a href="#">DevOps & Automation</a></li>
+              <li><a href="services.html#service-details-7">Search Engine Optimization</a></li>
+              <li><a href="services.html#service-details-8">Al & machine learning</a></li>
+              <li><a href="services.html#service-details-9">DevOps & Automation</a></li>
             </ul>
           </li>
           <li><a href="contact.html">Contact</a></li>
@@ -117,8 +117,8 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <button class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#getStartedModal"><i>Get Started</i></button>
-
+      <button class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#getStartedModal"><i>Get
+          Started</i></button>
 
     </div>
   </header><!-- End Header -->
@@ -129,8 +129,10 @@
     <div class="breadcrumbs">
       <div class="container">
         <h2>Course Details</h2>
-        <p style="font-size: 1rem;">Ready to take the next step? Explore our diverse range of courses designed to help you master new skills and achieve your goals. Whether you're a beginner or looking to advance your expertise, you'll find a course that's right for you.</p>
-          <h6 class="justify-content-center">Browse our full list of courses below to find the perfect fit.</h6> 
+        <p style="font-size: 1rem;">Ready to take the next step? Explore our diverse range of courses designed to help
+          you master new skills and achieve your goals. Whether you're a beginner or looking to advance your expertise,
+          you'll find a course that's right for you.</p>
+        <h6 class="justify-content-center">Browse our full list of courses below to find the perfect fit.</h6>
       </div>
     </div><!-- End Breadcrumbs -->
 
@@ -149,7 +151,7 @@
                   <p class="price">$169</p>
                 </div> -->
 
-                <h3><a href="course-details.html">Web Development</a></h3><a href="course-details.html" class="arrow-link" data-bs-toggle="modal" data-bs-target="#getStartedModal">Enquiry</a>
+                <h3><a href="course-details.html">Web Development</a></h3>
                 <p>From captivating websites to user-friendly mobile applications, we craft digital experiences that
                   leave a lasting impression and drive engagement.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
@@ -176,7 +178,7 @@
                   <p class="price">$250</p>
                 </div> -->
 
-                <h3><a href="course-details.html#details-1">AI Based Customized Software</a></h3><a href="course-details.html" class="arrow-link" data-bs-toggle="modal" data-bs-target="#getStartedModal">Enquiry</a>
+                <h3><a href="course-details.html#details-1">AI Based Customized Software</a></h3>
                 <p>AI-based customized software tailors solutions using machine learning to automate tasks, enhance
                   efficiency, and adapt to unique business needs seamlessly.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
@@ -203,7 +205,7 @@
                   <p class="price">$180</p>
                 </div> -->
 
-                <h3><a href="course-details.html#details-2">Application Developer</a></h3><a href="course-details.html" class="arrow-link" data-bs-toggle="modal" data-bs-target="#getStartedModal">Enquiry</a>
+                <h3><a href="course-details.html#details-2">Application Developer</a></h3>
                 <p>Learn to build powerful web,mobile, and game applications. Our courses cover modern languages,
                   frameworks, and tools for aspiring developers..</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
@@ -231,7 +233,7 @@
                   <p class="price">$169</p>
                 </div> -->
 
-                <h3><a href="course-details.html#details-3">Cloud Computing </a></h3><a href="course-details.html" class="arrow-link" data-bs-toggle="modal" data-bs-target="#getStartedModal">Enquiry</a>
+                <h3><a href="course-details.html#details-3">Cloud Computing </a></h3>
                 <p>Master the future of technology with hands-on training in AWS, Azure, and Google Cloud. Understand
                   storage, networking, security, and deployment to build real-world cloud solutions..</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
@@ -258,7 +260,7 @@
                   <p class="price">$169</p>
                 </div> -->
 
-                <h3><a href="course-details.html#datails-4">DevOps & Automation</a></h3><a href="course-details.html" class="arrow-link" data-bs-toggle="modal" data-bs-target="#getStartedModal">Enquiry</a>
+                <h3><a href="course-details.html#datails-4">DevOps & Automation</a></h3>
                 <p>We provide DevOps and automation solutions to streamline development, automate workflows, and
                   accelerate software delivery with reliability.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
@@ -285,7 +287,8 @@
                   <p class="price">$169</p>
                 </div> -->
 
-                <h3><a href="course-details.html#details-5">Cybersecurity</a></h3><a href="course-details.html" class="arrow-link" data-bs-toggle="modal" data-bs-target="#getStartedModal">Enquiry</a>
+                <h3><a href="course-details.html#details-5">Cybersecurity
+                  </a></h3>
                 <p>In today's digital world, a secure application is a non-negotiable. Cybersecurity is the practice of
                   protecting systems, networks, and programs from digital attacks. These attacks are aimed at accessing,
                   changing, or destroying sensitive information; extorting money from users; or interrupting normal
@@ -315,7 +318,7 @@
                   <p class="price">$169</p>
                 </div> -->
 
-                <h3><a href="course-details.html#details-6">Data science</a></h3><a href="course-details.html" class="arrow-link" data-bs-toggle="modal" data-bs-target="#getStartedModal">Enquiry</a>
+                <h3><a href="course-details.html#details-6">Data science</a></h3>
                 <p>We deliver data science solutions to analyze, visualize, and predict trends, helping businesses make
                   smarter and data-driven decisions.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
@@ -342,7 +345,7 @@
                   <p class="price">$169</p>
                 </div> -->
 
-                <h3><a href="course-details.html#details-7">Al & machine learning</a></h3><a href="course-details.html" class="arrow-link" data-bs-toggle="modal" data-bs-target="#getStartedModal">Enquiry</a>
+                <h3><a href="course-details.html#details-7">Al & machine learning</a></h3>
                 <p>We offer AI and machine learning solutions to help businesses automate their processes, improve
                   efficiency, and gain valuable insights from their data. Our team can help you implement AI and machine
                   learning technology to your business.</p>
@@ -371,7 +374,7 @@
                   <p class="price">$169</p>
                 </div> -->
 
-                <h3><a href="course-details.html#details-8">Mobile app development</a></h3><a href="course-details.html" class="arrow-link" data-bs-toggle="modal" data-bs-target="#getStartedModal">Enquiry</a>
+                <h3><a href="course-details.html#details-8">Mobile app development</a></h3>
                 <p>We create fast, secure, and user-friendly Android & iOS apps to boost customer engagement, business
                   efficiency, and digital growth.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
@@ -398,7 +401,7 @@
                   <p class="price">$169</p>
                 </div> -->
 
-                <h3><a href="course-details.html#details-9">Database Management</a></h3><a href="course-details.html" class="arrow-link" data-bs-toggle="modal" data-bs-target="#getStartedModal">Enquiry</a>
+                <h3><a href="course-details.html#details-9">Database Management</a></h3>
                 <p>We provide reliable database management solutions to store, organize, and secure your data, ensuring
                   high performance and easy accessibility</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
@@ -425,7 +428,7 @@
                   <p class="price">$250</p>
                 </div> -->
 
-                <h3><a href="course-details.html#CRMS">CRMS</a></h3><a href="course-details.html" class="arrow-link" data-bs-toggle="modal" data-bs-target="#getStartedModal">Enquiry</a>
+                <h3><a href="course-details.html#CRMS">CRMS</a></h3>
                 <p>We deliver custom CRM solutions to manage customer relationships, streamline sales, and improve
                   business growth with better insights.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
@@ -452,7 +455,7 @@
                   <p class="price">$250</p>
                 </div> -->
 
-                <h3><a href="course-details.html#HRMS">HRMS</a></h3><a href="course-details.html" class="arrow-link" data-bs-toggle="modal" data-bs-target="#getStartedModal">Enquiry</a>
+                <h3><a href="course-details.html#HRMS">HRMS</a></h3>
                 <p>We provide HRMS solutions to simplify employee management, automate HR tasks, and improve workforce
                   productivity with smart tools.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
@@ -479,7 +482,7 @@
                   <p class="price">$250</p>
                 </div> -->
 
-                <h3><a href="course-details.html#ERP">ERP</a></h3><a href="course-details.html" class="arrow-link" data-bs-toggle="modal" data-bs-target="#getStartedModal">Enquiry</a>
+                <h3><a href="course-details.html#ERP">ERP</a></h3>
                 <p>Our ERP solutions help businesses automate their processes, improve efficiency, and reduce costs. Our
                   experts can help you choose and implement the right ERP solution for your business.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
@@ -506,7 +509,7 @@
                   <p class="price">$250</p>
                 </div> -->
 
-                <h3><a href="course-details.html#details-10">Pharmacy Software</a></h3><a href="course-details.html" class="arrow-link" data-bs-toggle="modal" data-bs-target="#getStartedModal">Enquiry</a>
+                <h3><a href="course-details.html#details-10">Pharmacy Software</a></h3>
                 <p>We offer pharmacy software to manage inventory, billing, prescriptions, and customer records with
                   speed, accuracy, and efficiency..</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
@@ -533,7 +536,7 @@
                   <p class="price">$250</p>
                 </div> -->
 
-                <h3><a href="course-details.html#details-11">Legal Software</a></h3><a href="course-details.html" class="arrow-link" data-bs-toggle="modal" data-bs-target="#getStartedModal">Enquiry</a>
+                <h3><a href="course-details.html#details-11">Legal Software</a></h3>
                 <p>We provide legal software to manage cases, documents, billing, and client records, ensuring
                   efficiency and compliance for law firms.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
@@ -560,64 +563,10 @@
                   <p class="price">$250</p>
                 </div> -->
 
-                <h3><a href="course-details.html#details-12">Hospital Management Software</a></h3><a href="course-details.html" class="arrow-link" data-bs-toggle="modal" data-bs-target="#getStartedModal">Enquiry</a>
+                <h3><a href="course-details.html#details-12">Hospital Management Software</a></h3>
                 <p>Hospital Management Software is a comprehensive solution suitable for hospitals of all sizes,
                   including small facilities and multi-chain hospitals. It efficiently handles health-related
                   information management tasks.</p>
-                <!-- <div class="trainer d-flex justify-content-between align-items-center">
-                  <div class="trainer-profile d-flex align-items-center">
-                    <img src="../assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">
-                    <span>Lana</span>
-                  </div>
-                  <div class="trainer-rank d-flex align-items-center">
-                    <i class="bx bx-user"></i>&nbsp;35
-                    &nbsp;&nbsp;
-                    <i class="bx bx-heart"></i>&nbsp;42
-                  </div>
-                </div> -->
-              </div>
-            </div>
-          </div> <!-- End Course Item-->
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <div class="course-item">
-              <img src="assets/img/course-2.jpg" class="img-fluid" alt="...">
-              <div class="course-content">
-                <!-- <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>Marketing</h4>
-                  <p class="price">$250</p>
-                </div> -->
-
-                <h3><a href="course-details.html#details-13">Extract Text from PDF</a></h3><a href="course-details.html" class="arrow-link" data-bs-toggle="modal" data-bs-target="#getStartedModal">Enquiry</a>
-                <p>We offer smart PDF text extraction services to quickly convert documents into editable, searchable,
-                  and shareable formats with accuracy..</p>
-                <!-- <div class="trainer d-flex justify-content-between align-items-center">
-                  <div class="trainer-profile d-flex align-items-center">
-                    <img src="../assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">
-                    <span>Lana</span>
-                  </div>
-                  <div class="trainer-rank d-flex align-items-center">
-                    <i class="bx bx-user"></i>&nbsp;35
-                    &nbsp;&nbsp;
-                    <i class="bx bx-heart"></i>&nbsp;42
-                  </div>
-                </div> -->
-              </div>
-            </div>
-          </div> <!-- End Course Item-->
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <div class="course-item">
-              <img src="assets/img/course-2.jpg" class="img-fluid" alt="...">
-              <div class="course-content">
-                <!-- <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>Marketing</h4>
-                  <p class="price">$250</p>
-                </div> -->
-
-                <h3><a href="course-details.html#details-14">PDF to JSON Converter</a></h3><a href="course-details.html" class="arrow-link" data-bs-toggle="modal" data-bs-target="#getStartedModal">Enquiry</a>
-                <p>We provide fast and reliable PDF to JSON conversion, enabling structured data extraction for easy
-                  integration with apps and databases.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
                     <img src="../assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">
@@ -642,7 +591,7 @@
                   <p class="price">$250</p>
                 </div> -->
 
-                <h3><a href="course-details.html#details-15">Search Engine Optimization</a></h3><a href="course-details.html" class="arrow-link" data-bs-toggle="modal" data-bs-target="#getStartedModal">Enquiry</a>
+                <h3><a href="course-details.html#details-15">Search Engine Optimization</a></h3>
                 <p>We offer SEO services to improve website visibility, boost rankings, and drive organic traffic for
                   sustainable online growth.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
@@ -700,12 +649,17 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="services.html#service-details-1">Real Time Project
-                  Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">AI Based Customized Software</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Search Engine Optimization</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Al & machine learning</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">DevOps & Automation</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html#service-details-1">Real
+                  Time Project Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html#service-details-2">AI Based Customized
+                  Software</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html#service-details-7">Search Engine
+                  Optimization</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html#service-details-8">Al & machine
+                  learning</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html#service-details-9">DevOps & Automation</a>
+              </li>
             </ul>
           </div>
 
@@ -725,7 +679,7 @@
 
       <div class="me-md-auto text-center text-md-start">
         <div class="copyright">
-          &copy; Copyright <strong><span>AskAI Tech solutions pvt.ltd</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>AskAI</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
           Designed by <a href="#">AskAI</a>

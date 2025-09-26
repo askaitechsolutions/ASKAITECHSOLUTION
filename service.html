@@ -36,7 +36,47 @@
 </head>
 
 <body>
-
+    <div class="modal fade" id="getStartedModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Enquiry</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form mehod="post" action="registration.php">
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Phone</label>
+                            <input type="tel" class="form-control" placeholder="Enter your phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Choose Course</label>
+                            <select class="form-select" required>
+                                <option selected disabled>Select a course</option>
+                                <option>AI & Python Full Stack</option>
+                                <option>Web Development</option>
+                                <option>Mobile App Development</option>
+                                <option>Internship + Live Project with Certification</option>
+                                <option>Campus Interview preparation</option>
+                                <option>Zero coding knowledge to IT Expert</option>
+                                <option>AI Customized Software</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
@@ -61,7 +101,8 @@
                             <li class="dropdown"><a href="#"><span>Software Development</span> <i
                                         class="bi bi-chevron-right"></i></a>
                                 <ul>
-                                    <li><a href="services.html#service-details-2">AI Based Customized Software</a></li>
+                                    <li><a href="services.html#service-details-2">AI Based Customized Software</a>
+                                    </li>
                                     <li><a href="services.html#service-details-3">Legal Software</a></li>
                                     <li><a href="services.html#service-details-4">HRMS</a></li>
                                     <li><a href="services.html#service-details-5">ERP</a></li>
@@ -78,11 +119,12 @@
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
 
-            <a href="courses.html" class="get-started-btn">Get Started</a>
-
+            <button class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#getStartedModal"><i>Get
+                    Started</i></button>
         </div>
     </header><!-- End Header -->
 
+    <main id="main" data-aos="fade-in"></main>
     <!-- ======= Cource Details Section ======= -->
     <section id="service-details-1" class="page hidden">
         <div class="container" data-aos="fade-up">
@@ -98,8 +140,8 @@
                         functional solutions with unprecedented speed and transparency.
                     </p>
                 </div>
-                <div class="col-lg-4">
-
+                <div class="col-lg-4 mb-3">
+                    <!-- </p>
                     <div class="course-info d-flex justify-content-between align-items-center">
                         <h5>Trainer</h5>
                         <p><a href="#">Walter White</a></p>
@@ -118,7 +160,7 @@
                     <div class="course-info d-flex justify-content-between align-items-center">
                         <h5>Schedule</h5>
                         <p>5.00 pm - 7.00 pm</p>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
@@ -154,10 +196,12 @@
                                     <p class="fst-italic">Live chat and collaboration tools are essential for modern
                                         communication.
                                     </p>
-                                    <p>They are applications that enable instant messaging, file sharing, video calls,
+                                    <p>They are applications that enable instant messaging, file sharing, video
+                                        calls,
                                         and other real-time interactions.</p>
                                     <p> Unlike email or traditional messaging, these tools create a dynamic,
-                                        conversational environment where information flows instantly, making it easier
+                                        conversational environment where information flows instantly, making it
+                                        easier
                                         for teams to work together and for businesses to provide immediate customer
                                         support</p>
                                 </div>
@@ -170,12 +214,15 @@
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
                                     <h3>Real-Time Intelligence: Live Dashboards</h3>
-                                    <p class="fst-italic">In today's fast-paced business environment, waiting for daily
+                                    <p class="fst-italic">In today's fast-paced business environment, waiting for
+                                        daily
                                         or weekly reports is no longer an option.</p>
-                                    <p>A live dashboard is a dynamic business intelligence tool that displays data as it
+                                    <p>A live dashboard is a dynamic business intelligence tool that displays data
+                                        as it
                                         changes, providing an up-to-the-minute view of key metrics and performance
                                         indicators.</p>
-                                    <p> Unlike static reports, a live dashboard is a constantly updated source of truth,
+                                    <p> Unlike static reports, a live dashboard is a constantly updated source of
+                                        truth,
                                         enabling you to spot trends, detect anomalies, and make informed decisions
                                         instantly.</p>
                                 </div>
@@ -190,8 +237,10 @@
                                     <h3>Beyond Connectivity: IoT and Sensor Monitoring
                                     </h3>
                                     <p class="fst-italic">IoT (Internet of Things) and sensor monitoring involve
-                                        connecting physical devices to the internet to collect and exchange data.</p>
-                                    <p>This allows for real-time visibility and control over equipment, environments,
+                                        connecting physical devices to the internet to collect and exchange data.
+                                    </p>
+                                    <p>This allows for real-time visibility and control over equipment,
+                                        environments,
                                         and processes. Instead of relying on manual checks, these systems provide a
                                         continuous stream of information, enabling powerful automation, predictive
                                         maintenance, and data-driven insights.</p>
@@ -218,15 +267,17 @@
                     <h3>AI-Based Customized Software</h3>
                     <p> AI-Based Customized Software is a revolutionary approach to application development where we
                         embed Artificial Intelligence (AI) directly into the core of a tailored software solution.
-                        Unlike off-the-shelf software, a custom AI solution is designed to perfectly fit your specific
+                        Unlike off-the-shelf software, a custom AI solution is designed to perfectly fit your
+                        specific
                         business needs and workflows. It's not just an application that automates tasks; it's an
-                        intelligent system that learns from your data, anticipates your needs, and continuously improves
+                        intelligent system that learns from your data, anticipates your needs, and continuously
+                        improves
                         its own performance.
                     </p>
                 </div>
                 <div class="col-lg-4">
 
-                    <div class="course-info d-flex justify-content-between align-items-center">
+                    <!-- <div class="course-info d-flex justify-content-between align-items-center">
                         <h5>Trainer</h5>
                         <p><a href="#">Walter White</a></p>
                     </div>
@@ -244,7 +295,7 @@
                     <div class="course-info d-flex justify-content-between align-items-center">
                         <h5>Schedule</h5>
                         <p>5.00 pm - 7.00 pm</p>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
@@ -260,33 +311,35 @@
                 <div class="col-lg-3">
                     <ul class="nav nav-tabs flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Problem-Specific
+                            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-4">Problem-Specific
                                 Solutions:</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Predictive Power:</a>
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Predictive Power:</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Automation with Intelligence:</a>
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-6">Automation with Intelligence:</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Unmatched Efficiency: </a>
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-7">Unmatched Efficiency: </a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-lg-9 mt-4 mt-lg-0">
                     <div class="tab-content">
-                        <div class="tab-pane active show" id="tab-1">
+                        <div class="tab-pane active show" id="tab-4">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3> We build custom software and AI models that are precisely engineered to solve
+                                    <h3> We build custom software and AI models that are precisely engineered to
+                                        solve
                                         your unique business challenges.</h3>
                                     <p class="fst-italic">In a world filled with off-the-shelf software,
                                         problem-specific solutions stand apart by addressing a business's unique,
                                         intricate, and often complex needs. Instead of forcing your workflows into a
                                         generic tool, a problem-specific solution is a bespoke application or system
                                         designed to solve a single, well-defined problem with maximum efficiency and
-                                        precision. This approach is fundamental to unlocking new levels of productivity
+                                        precision. This approach is fundamental to unlocking new levels of
+                                        productivity
                                         and innovation.</p>
                                 </div>
                                 <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -294,15 +347,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-2">
+                        <div class="tab-pane" id="tab-5">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
                                     <h3>We use stream processing to analyze data as it's generated, enabling instant
                                         insights and automated responses.</h3>
-                                    <p class="fst-italic">Stream processing is a software paradigm designed to handle
+                                    <p class="fst-italic">Stream processing is a software paradigm designed to
+                                        handle
                                         data in real time, as a continuous, unbounded flow, rather than in fixed,
                                         historical batches. Unlike traditional data analysis that processes large
-                                        datasets at scheduled intervals, stream processing analyzes data the moment it
+                                        datasets at scheduled intervals, stream processing analyzes data the moment
+                                        it
                                         arrives. This is crucial for applications where delayed insights can lead to
                                         missed opportunities or costly mistakes, such as financial trading, fraud
                                         detection, and live monitoring.</p>
@@ -312,14 +367,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-3">
+                        <div class="tab-pane" id="tab-6">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>We build smart systems that use AI to automate complex, decision-based tasks,
+                                    <h3>We build smart systems that use AI to automate complex, decision-based
+                                        tasks,
                                         freeing up your team for more strategic work.
                                     </h3>
-                                    <p class="fst-italic">Automation with Intelligence is the next step beyond simple,
-                                        rule-based automation. While traditional automation follows a rigid, pre-defined
+                                    <p class="fst-italic">Automation with Intelligence is the next step beyond
+                                        simple,
+                                        rule-based automation. While traditional automation follows a rigid,
+                                        pre-defined
                                         set of instructions (e.g., "if X happens, then do Y"), automation with
                                         intelligence uses Artificial Intelligence (AI) and Machine Learning (ML) to
                                         handle tasks that require judgment, adaptation, and complex decision-making.
@@ -331,17 +389,22 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-4">
+                        <div class="tab-pane" id="tab-7">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
                                     <h3>We optimize your workflows and resources to a degree that is impossible with
                                         generic tools, giving your business a distinct competitive edge.</h3>
-                                    <p class="fst-italic">Unmatched efficiency is the ability to achieve a high level of
+                                    <p class="fst-italic">Unmatched efficiency is the ability to achieve a high
+                                        level of
                                         productivity with minimal wasted effort, time, and resources. While most
-                                        software aims to be efficient, a truly optimized solution takes this to a new
-                                        level by eliminating every unnecessary step, automating complex processes, and
-                                        ensuring that every component works in perfect harmony. This is the difference
-                                        between a tool that helps you do a job and a system that does the job for you,
+                                        software aims to be efficient, a truly optimized solution takes this to a
+                                        new
+                                        level by eliminating every unnecessary step, automating complex processes,
+                                        and
+                                        ensuring that every component works in perfect harmony. This is the
+                                        difference
+                                        between a tool that helps you do a job and a system that does the job for
+                                        you,
                                         flawlessly.</p>
                                 </div>
                                 <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -367,13 +430,14 @@
                     <p>
                         Legal software is a category of applications and digital tools designed to help legal
                         professionals and organizations manage their operations, cases, documents, and clients more
-                        effectively. It automates tasks, improves accuracy, and provides powerful analytics, allowing
+                        effectively. It automates tasks, improves accuracy, and provides powerful analytics,
+                        allowing
                         lawyers to focus on strategy and client representation rather than administrative burdens.
                     </p>
                 </div>
                 <div class="col-lg-4">
 
-                    <div class="course-info d-flex justify-content-between align-items-center">
+                    <!-- <div class="course-info d-flex justify-content-between align-items-center">
                         <h5>Trainer</h5>
                         <p><a href="#">Walter White</a></p>
                     </div>
@@ -391,7 +455,7 @@
                     <div class="course-info d-flex justify-content-between align-items-center">
                         <h5>Schedule</h5>
                         <p>5.00 pm - 7.00 pm</p>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
@@ -407,34 +471,37 @@
                 <div class="col-lg-3">
                     <ul class="nav nav-tabs flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Case Management
+                            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-8">Case Management
                                 Systems:</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Document Automation and
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-9">Document Automation and
                                 Management</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Billing and Time Tracking</a>
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-10">Billing and Time Tracking</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Compliance and Security</a>
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-11">Compliance and Security</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-4">E-Discovery and Analytics</a>
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-12">E-Discovery and Analytics</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-lg-9 mt-4 mt-lg-0">
                     <div class="tab-content">
-                        <div class="tab-pane active show" id="tab-1">
+                        <div class="tab-pane active show" id="tab-8">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>We build comprehensive platforms that centralize and streamline every aspect of
+                                    <h3>We build comprehensive platforms that centralize and streamline every aspect
+                                        of
                                         a legal case, from intake to resolution.</h3>
-                                    <p class="fst-italic">A Case Management System (CMS) is a software solution designed
+                                    <p class="fst-italic">A Case Management System (CMS) is a software solution
+                                        designed
                                         to help legal professionals organize, track, and manage all the details of a
-                                        legal case. In a law firm or legal department, CMS acts as the central hub for
+                                        legal case. In a law firm or legal department, CMS acts as the central hub
+                                        for
                                         all case-related information, documents, deadlines, and communications. By
                                         providing a single, accessible source of truth, it eliminates the need for
                                         manual record-keeping and reduces the risk of human error.</p>
@@ -444,16 +511,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-2">
+                        <div class="tab-pane" id="tab-9">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
                                     <h3>We build intelligent systems that automate the creation, organization, and
                                         security of legal documents, saving time and eliminating errors.</h3>
                                     <p class="fst-italic">Document automation and management is a core component of
                                         modern legal software. It involves using technology to streamline the entire
-                                        lifecycle of a legal document—from its initial creation to its final archival.
-                                        By replacing manual, repetitive tasks with automated processes, we help legal
-                                        professionals reduce administrative overhead, ensure accuracy, and maintain a
+                                        lifecycle of a legal document—from its initial creation to its final
+                                        archival.
+                                        By replacing manual, repetitive tasks with automated processes, we help
+                                        legal
+                                        professionals reduce administrative overhead, ensure accuracy, and maintain
+                                        a
                                         secure, easily accessible repository of all case files.</p>
                                 </div>
                                 <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -461,17 +531,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-3">
+                        <div class="tab-pane" id="tab-10">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
                                     <h3>We build integrated systems that simplify time tracking and streamline the
                                         billing process, ensuring accurate invoices and a healthy bottom line.
                                     </h3>
-                                    <p class="fst-italic">For law firms and professional service providers, billing and
-                                        time tracking are more than just administrative tasks—they are the lifeblood of
+                                    <p class="fst-italic">For law firms and professional service providers, billing
+                                        and
+                                        time tracking are more than just administrative tasks—they are the lifeblood
+                                        of
                                         the business. Accurate and efficient billing is crucial for profitability,
-                                        client trust, and a predictable cash flow. Our integrated software solutions are
-                                        designed to automate these processes, freeing up legal professionals to focus on
+                                        client trust, and a predictable cash flow. Our integrated software solutions
+                                        are
+                                        designed to automate these processes, freeing up legal professionals to
+                                        focus on
                                         their work.</p>
                                 </div>
                                 <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -479,16 +553,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-4">
+                        <div class="tab-pane" id="tab-11">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>We build legal software with robust security and strict adherence to regulatory
+                                    <h3>We build legal software with robust security and strict adherence to
+                                        regulatory
                                         compliance, protecting your firm and your clients.</h3>
                                     <p class="fst-italic">In the legal field, compliance and security are not just
                                         features; they are a fundamental necessity. Handling sensitive client
-                                        information, confidential case details, and privileged communications requires
-                                        the highest level of protection. Our legal software is built from the ground up
-                                        to meet these stringent requirements, ensuring your firm operates securely and
+                                        information, confidential case details, and privileged communications
+                                        requires
+                                        the highest level of protection. Our legal software is built from the ground
+                                        up
+                                        to meet these stringent requirements, ensuring your firm operates securely
+                                        and
                                         in full compliance with industry regulations.</p>
                                 </div>
                                 <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -496,16 +574,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-4">
+                        <div class="tab-pane" id="tab-12">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
                                     <h3> We build intelligent software that uses AI to accelerate the e-discovery
                                         process and uncover key insights from vast amounts of data.</h3>
                                     <p class="fst-italic">E-Discovery (Electronic Discovery) is the process of
-                                        identifying, collecting, and producing electronically stored information (ESI)
+                                        identifying, collecting, and producing electronically stored information
+                                        (ESI)
                                         in response to a request for production in a lawsuit or investigation. In
                                         today's digital world, this involves sifting through massive amounts of
-                                        data—emails, documents, chat logs, and more—which can be a time-consuming and
+                                        data—emails, documents, chat logs, and more—which can be a time-consuming
+                                        and
                                         costly process. Analytics uses AI and machine learning to make this process
                                         faster, more accurate, and more strategic.</p>
                                 </div>
@@ -530,16 +610,19 @@
                     <img src="assets/img/web.jpg" class="img-fluid" alt="" style="width: 1100px; height: 533px;">
                     <h3>Human Resource Management System</h3>
                     <p>
-                        An HRMS (Human Resource Management System) is a comprehensive software solution that centralizes
+                        An HRMS (Human Resource Management System) is a comprehensive software solution that
+                        centralizes
                         and automates key HR functions. It replaces manual, paper-based processes and disparate
-                        spreadsheets with a single, integrated platform. The core purpose of an HRMS is to streamline HR
-                        operations, improve efficiency, ensure compliance, and provide a better experience for employees
+                        spreadsheets with a single, integrated platform. The core purpose of an HRMS is to
+                        streamline HR
+                        operations, improve efficiency, ensure compliance, and provide a better experience for
+                        employees
                         and HR professionals alike.
                     </p>
                 </div>
                 <div class="col-lg-4">
 
-                    <div class="course-info d-flex justify-content-between align-items-center">
+                    <!-- <div class="course-info d-flex justify-content-between align-items-center">
                         <h5>Trainer</h5>
                         <p><a href="#">Walter White</a></p>
                     </div>
@@ -557,7 +640,7 @@
                     <div class="course-info d-flex justify-content-between align-items-center">
                         <h5>Schedule</h5>
                         <p>5.00 pm - 7.00 pm</p>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
@@ -573,34 +656,38 @@
                 <div class="col-lg-3">
                     <ul class="nav nav-tabs flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Employee Data
+                            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-13">Employee Data
                                 Management</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Recruitment and Onboarding</a>
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-14">Recruitment and Onboarding</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Payroll and Compensation
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-15">Payroll and Compensation
                                 Management</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Performance Management</a>
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-16">Performance Management</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Time and Attendance Tracking</a>
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-17">Time and Attendance Tracking</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-lg-9 mt-4 mt-lg-0">
                     <div class="tab-content">
-                        <div class="tab-pane active show" id="tab-1">
+                        <div class="tab-pane active show" id="tab-13">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>We build secure, centralized systems that act as a single source of truth for
+                                    <h3>We build secure, centralized systems that act as a single source of truth
+                                        for
                                         all your employee information.</h3>
-                                    <p class="fst-italic">Employee Data Management is the core function of any HRMS. It
-                                        is the process of collecting, storing, and maintaining accurate and up-to-date
-                                        information for every employee in your organization. In the past, this was done
+                                    <p class="fst-italic">Employee Data Management is the core function of any HRMS.
+                                        It
+                                        is the process of collecting, storing, and maintaining accurate and
+                                        up-to-date
+                                        information for every employee in your organization. In the past, this was
+                                        done
                                         with paper files and spreadsheets, but today, a modern, digital system is
                                         essential for efficiency, compliance, and strategic workforce planning.</p>
                                 </div>
@@ -609,14 +696,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-2">
+                        <div class="tab-pane" id="tab-14">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>We automate and streamline the entire hiring process, from attracting top talent
+                                    <h3>We automate and streamline the entire hiring process, from attracting top
+                                        talent
                                         to seamlessly integrating new hires into your company.</h3>
                                     <p class="fst-italic">Recruitment and Onboarding are the critical first steps in
-                                        building a successful team. The process of finding the right talent and getting
-                                        them settled into your company can be time-consuming and complex. Our integrated
+                                        building a successful team. The process of finding the right talent and
+                                        getting
+                                        them settled into your company can be time-consuming and complex. Our
+                                        integrated
                                         HRMS modules are designed to simplify this process, providing a smooth and
                                         engaging experience for both your hiring team and your new employees.</p>
                                 </div>
@@ -625,17 +715,23 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-3">
+                        <div class="tab-pane" id="tab-15">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>We build secure and accurate systems that automate payroll, manage compensation,
+                                    <h3>We build secure and accurate systems that automate payroll, manage
+                                        compensation,
                                         and ensure compliance with all labor laws.
                                     </h3>
-                                    <p class="fst-italic">Payroll and Compensation Management is a core function of any
-                                        HR department. It involves the complex process of calculating employee wages,
-                                        processing tax deductions, and ensuring that everyone is paid accurately and on
-                                        time. Errors in payroll can lead to serious consequences, including legal issues
-                                        and low employee morale. Our software solutions are designed to automate this
+                                    <p class="fst-italic">Payroll and Compensation Management is a core function of
+                                        any
+                                        HR department. It involves the complex process of calculating employee
+                                        wages,
+                                        processing tax deductions, and ensuring that everyone is paid accurately and
+                                        on
+                                        time. Errors in payroll can lead to serious consequences, including legal
+                                        issues
+                                        and low employee morale. Our software solutions are designed to automate
+                                        this
                                         process, ensuring accuracy and compliance.</p>
                                 </div>
                                 <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -643,14 +739,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-4">
+                        <div class="tab-pane" id="tab-16">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>We build systems that foster a culture of continuous feedback, goal alignment,
+                                    <h3>We build systems that foster a culture of continuous feedback, goal
+                                        alignment,
                                         and employee development.</h3>
                                     <p class="fst-italic">Performance Management is the process of setting goals,
                                         providing ongoing feedback, and evaluating an employee's contribution to an
-                                        organization. In a modern workforce, it has evolved from a rigid, annual review
+                                        organization. In a modern workforce, it has evolved from a rigid, annual
+                                        review
                                         to a continuous, data-driven process. A robust performance management system
                                         helps to align individual employee goals with the company’s strategic
                                         objectives, ensuring that everyone is working towards a common purpose</p>
@@ -660,15 +758,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-4">
+                        <div class="tab-pane" id="tab-17">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>We build smart systems that automate time tracking, simplify leave management,
+                                    <h3>We build smart systems that automate time tracking, simplify leave
+                                        management,
                                         and ensure compliance for a flexible and modern workforce.</h3>
                                     <p class="fst-italic">Time and Attendance Tracking is a core HR function that
                                         involves monitoring when employees start and end their workday, as well as
-                                        tracking time off, breaks, and overtime. While it was once handled with paper
-                                        timesheets or punch cards, a modern, automated system is essential for accurate
+                                        tracking time off, breaks, and overtime. While it was once handled with
+                                        paper
+                                        timesheets or punch cards, a modern, automated system is essential for
+                                        accurate
                                         payroll, labor law compliance, and efficient workforce management.</p>
                                 </div>
                                 <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -694,9 +795,12 @@
                     <p>
                         An ERP (Enterprise Resource Planning) system is a powerful, integrated software suite that a
                         business uses to manage and automate its core operations. Instead of using separate,
-                        disconnected applications for each department, an ERP system provides a single, unified platform
-                        that connects everything from finance and manufacturing to sales and human resources. The goal
-                        of an ERP is to centralize data, streamline workflows, and provide a single source of truth for
+                        disconnected applications for each department, an ERP system provides a single, unified
+                        platform
+                        that connects everything from finance and manufacturing to sales and human resources. The
+                        goal
+                        of an ERP is to centralize data, streamline workflows, and provide a single source of truth
+                        for
                         your entire organization.
 
                         .
@@ -704,7 +808,7 @@
                 </div>
                 <div class="col-lg-4">
 
-                    <div class="course-info d-flex justify-content-between align-items-center">
+                    <!-- <div class="course-info d-flex justify-content-between align-items-center">
                         <h5>Trainer</h5>
                         <p><a href="#">Walter White</a></p>
                     </div>
@@ -722,7 +826,7 @@
                     <div class="course-info d-flex justify-content-between align-items-center">
                         <h5>Schedule</h5>
                         <p>5.00 pm - 7.00 pm</p>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
@@ -738,31 +842,36 @@
                 <div class="col-lg-3">
                     <ul class="nav nav-tabs flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Financial Management</a>
+                            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-18">Financial
+                                Management</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Supply Chain Management</a>
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-19">Supply Chain Management</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Manufacturing and Production</a>
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-20">Manufacturing and Production</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Human Resources </a>
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-21">Human Resources </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Customer Relationship Management </a>
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-22">Customer Relationship Management
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-lg-9 mt-4 mt-lg-0">
                     <div class="tab-content">
-                        <div class="tab-pane active show" id="tab-1">
+                        <div class="tab-pane active show" id="tab-18">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>We build comprehensive systems that provide real-time visibility, automation,
+                                    <h3>We build comprehensive systems that provide real-time visibility,
+                                        automation,
                                         and control over your company's financial health.</h3>
-                                    <p class="fst-italic">Financial management is a core component of any ERP system. It
-                                        is the process of planning, organizing, and controlling a company’s financial
+                                    <p class="fst-italic">Financial management is a core component of any ERP
+                                        system. It
+                                        is the process of planning, organizing, and controlling a company’s
+                                        financial
                                         resources. Our financial management modules go beyond basic accounting; they
                                         provide a comprehensive suite of tools that automate financial processes,
                                         simplify compliance, and give you the real-time insights needed to make
@@ -773,17 +882,23 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-2">
+                        <div class="tab-pane" id="tab-19">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>We build integrated solutions that optimize your supply chain, from procurement
+                                    <h3>We build integrated solutions that optimize your supply chain, from
+                                        procurement
                                         to delivery, for maximum efficiency and transparency.</h3>
-                                    <p class="fst-italic">Supply Chain Management (SCM) is the process of managing the
-                                        flow of goods and services, from the raw material stage to the final product's
+                                    <p class="fst-italic">Supply Chain Management (SCM) is the process of managing
+                                        the
+                                        flow of goods and services, from the raw material stage to the final
+                                        product's
                                         delivery to the customer. In a modern business, SCM is a complex network of
-                                        suppliers, manufacturers, warehouses, and logistics. Our SCM solutions, as part
-                                        of a comprehensive ERP system, provide the tools to centralize and automate this
-                                        entire process, ensuring that goods move efficiently, costs are controlled, and
+                                        suppliers, manufacturers, warehouses, and logistics. Our SCM solutions, as
+                                        part
+                                        of a comprehensive ERP system, provide the tools to centralize and automate
+                                        this
+                                        entire process, ensuring that goods move efficiently, costs are controlled,
+                                        and
                                         customers are satisfied.
 
                                     </p>
@@ -793,16 +908,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-3">
+                        <div class="tab-pane" id="tab-20">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>We build integrated software that streamlines your manufacturing processes, from
+                                    <h3>We build integrated software that streamlines your manufacturing processes,
+                                        from
                                         planning to quality control, for increased efficiency and output.
                                     </h3>
                                     <p class="fst-italic">Manufacturing and Production is a core function of an ERP
                                         system for any company that creates physical goods. It is the process of
                                         converting raw materials into finished products. In a modern manufacturing
-                                        environment, this involves complex scheduling, resource management, and quality
+                                        environment, this involves complex scheduling, resource management, and
+                                        quality
                                         control. Our ERP modules provide the tools to centralize and automate these
                                         processes, ensuring a lean, efficient, and cost-effective operation.</p>
                                 </div>
@@ -811,10 +928,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-4">
+                        <div class="tab-pane" id="tab-21">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>We build integrated HR software that automates administrative tasks and provides
+                                    <h3>We build integrated HR software that automates administrative tasks and
+                                        provides
                                         data-driven insights to manage your most valuable asset: your people.</h3>
                                     <p class="fst-italic"> Human Resources (HR) is the department responsible for
                                         managing an organization's most important resource: its employees. Our
@@ -829,15 +947,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-4">
+                        <div class="tab-pane" id="tab-22">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>We build integrated CRM systems that centralize customer data, streamline sales
+                                    <h3>We build integrated CRM systems that centralize customer data, streamline
+                                        sales
                                         and marketing, and enhance customer service for lasting relationships.</h3>
-                                    <p class="fst-italic"> Customer Relationship Management (CRM) is a technology and
+                                    <p class="fst-italic"> Customer Relationship Management (CRM) is a technology
+                                        and
                                         strategy used to manage all of a company's interactions with its current and
-                                        potential customers. Our integrated CRM module, as a part of a comprehensive ERP
-                                        system, provides a single, unified view of every customer, from their very first
+                                        potential customers. Our integrated CRM module, as a part of a comprehensive
+                                        ERP
+                                        system, provides a single, unified view of every customer, from their very
+                                        first
                                         contact to their most recent purchase and support request. This holistic
                                         perspective is essential for building strong, long-lasting relationships and
                                         driving sales growth.
@@ -865,17 +987,22 @@
                     <img src="assets/img/web.jpg" class="img-fluid" alt="" style="width: 1100px; height: 533px;">
                     <h3>Customer Relationship Management System</h3>
                     <p>
-                        A Customer Relationship Management System (CRMS) is a specialized software solution designed to
-                        manage and track all of a company's interactions with its current and potential customers. It
-                        serves as a central hub for all customer data, providing a unified view of the customer journey,
-                        from the very first contact to their most recent purchase and support request. By providing a
-                        holistic understanding of each customer, a CRM system helps businesses improve relationships,
+                        A Customer Relationship Management System (CRMS) is a specialized software solution designed
+                        to
+                        manage and track all of a company's interactions with its current and potential customers.
+                        It
+                        serves as a central hub for all customer data, providing a unified view of the customer
+                        journey,
+                        from the very first contact to their most recent purchase and support request. By providing
+                        a
+                        holistic understanding of each customer, a CRM system helps businesses improve
+                        relationships,
                         enhance sales efficiency, and deliver exceptional service.
                     </p>
                 </div>
                 <div class="col-lg-4">
 
-                    <div class="course-info d-flex justify-content-between align-items-center">
+                    <!-- <div class="course-info d-flex justify-content-between align-items-center">
                         <h5>Trainer</h5>
                         <p><a href="#">Walter White</a></p>
                     </div>
@@ -893,7 +1020,7 @@
                     <div class="course-info d-flex justify-content-between align-items-center">
                         <h5>Schedule</h5>
                         <p>5.00 pm - 7.00 pm</p>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
@@ -909,30 +1036,33 @@
                 <div class="col-lg-3">
                     <ul class="nav nav-tabs flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Sales Management</a>
+                            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-23">Sales Management</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Marketing Automation</a>
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-24">Marketing Automation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Customer Service & Support</a>
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-25">Customer Service & Support</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Analytics and Reporting</a>
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-26">Analytics and Reporting</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-lg-9 mt-4 mt-lg-0">
                     <div class="tab-content">
-                        <div class="tab-pane active show" id="tab-1">
+                        <div class="tab-pane active show" id="tab-23">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>We build intelligent software that streamlines your sales pipeline, automates
+                                    <h3>We build intelligent software that streamlines your sales pipeline,
+                                        automates
                                         routine tasks, and empowers your team to close more deals.</h3>
                                     <p class="fst-italic">Sales management is the process of leading a sales team,
-                                        coordinating sales operations, and implementing a sales strategy that allows a
+                                        coordinating sales operations, and implementing a sales strategy that allows
+                                        a
                                         business to consistently meet and exceed its revenue goals. In today's
-                                        competitive market, relying on manual processes or disconnected spreadsheets is
+                                        competitive market, relying on manual processes or disconnected spreadsheets
+                                        is
                                         no longer an option. Our integrated sales management solutions provide a
                                         centralized platform that gives your team the tools to be more efficient,
                                         insightful, and effective.
@@ -944,13 +1074,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-2">
+                        <div class="tab-pane" id="tab-24">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
                                     <h3>We build intelligent systems that automate and personalize your marketing
                                         campaigns to drive leads and boost conversions.</h3>
-                                    <p class="fst-italic">Marketing automation is the use of software and technology to
-                                        automate repetitive marketing activities. It is a strategic approach that allows
+                                    <p class="fst-italic">Marketing automation is the use of software and technology
+                                        to
+                                        automate repetitive marketing activities. It is a strategic approach that
+                                        allows
                                         businesses to nurture leads, deliver personalized content, and measure the
                                         effectiveness of their campaigns at scale. By automating routine tasks,
                                         marketers can shift their focus from manual execution to creating impactful
@@ -961,12 +1093,652 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-3">
+                        <div class="tab-pane" id="tab-25">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>We build intelligent systems that streamline support, enhance agent efficiency,
+                                    <h3>We build intelligent systems that streamline support, enhance agent
+                                        efficiency,
                                         and create exceptional customer experiences.
                                     </h3>
                                     <p class="fst-italic">Customer Service & Support is a crucial element of any
                                         successful business. In today's digital landscape, customers expect fast,
-                                        personalized, and efficient service across multiple channels. Our solutions are
+                                        personalized, and efficient service across multiple channels. Our solutions
+                                        are
+                                        designed to go beyond traditional support, providing a unified platform that
+                                        empowers your agents to resolve issues quickly and provides your customers
+                                        with
+                                        the seamless experience they expect.</p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="assets/img/course-details-tab-3.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-26">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>We turn your raw data into actionable intelligence, providing the clarity
+                                        you
+                                        need to stay ahead of the competition.</h3>
+                                    <p class="fst-italic">In a world where data is generated at an unprecedented
+                                        rate,
+                                        the ability to collect, analyze, and act on that information is a business's
+                                        most powerful asset. Analytics and Reporting is the discipline that
+                                        transforms a
+                                        jumble of raw numbers into a clear, compelling story. It is the process that
+                                        allows you to move beyond guesswork and make every decision with confidence,
+                                        backed by solid evidence.
+
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="assets/img/course-details-tab-4.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Cource Details Tabs Section -->
+
+    <!-- ======= Cource Details Section ======= -->
+    <section id="service-details-7" class="page hidden">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <img src="assets/img/web.jpg" class="img-fluid" alt="" style="width: 1100px; height: 533px;">
+                    <h3>Beyond the Search Bar: Search Engine Optimization</h3>
+                    <p>
+                        Search Engine Optimization (SEO) is the strategic process of improving your website's
+                        visibility
+                        on search engines like Google, Bing, and Yahoo. In an increasingly competitive digital
+                        landscape, showing up on the first page of search results is no longer a luxury—it's a
+                        necessity. We help your business achieve this by optimizing your website to be more relevant
+                        and
+                        authoritative in the eyes of search engine algorithms, ultimately attracting high-quality,
+                        unpaid traffic to your site.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+
+                    <!-- <div class="course-info d-flex justify-content-between align-items-center">
+                        <h5>Trainer</h5>
+                        <p><a href="#">Walter White</a></p>
+                    </div>
+
+                    <div class="course-info d-flex justify-content-between align-items-center">
+                        <h5>Course Fee</h5>
+                        <p>$165</p>
+                    </div>
+
+                    <div class="course-info d-flex justify-content-between align-items-center">
+                        <h5>Available Seats</h5>
+                        <p>30</p>
+                    </div>
+
+                    <div class="course-info d-flex justify-content-between align-items-center">
+                        <h5>Schedule</h5>
+                        <p>5.00 pm - 7.00 pm</p>
+                    </div> -->
+
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Cource Details Section -->
+
+    <!-- ======= Cource Details Tabs Section ======= -->
+    <section id="cource-details-tabs" class="cource-details-tabs">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row">
+                <div class="col-lg-3">
+                    <ul class="nav nav-tabs flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-27">On-Page SEO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-28">Off-Page SEO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-29">Technical SEO</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-9 mt-4 mt-lg-0">
+                    <div class="tab-content">
+                        <div class="tab-pane active show" id="tab-27">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>We fine-tune the content and code of your website to attract the right
+                                        audience
+                                        and boost your search engine rankings.</h3>
+                                    <p class="fst-italic">On-Page SEO refers to all the optimization efforts that
+                                        take
+                                        place directly on your website. It is the practice of ensuring that every
+                                        page
+                                        is structured, written, and coded to be easily understood by both search
+                                        engines
+                                        and human visitors. By meticulously optimizing each element, we signal to
+                                        search
+                                        engines that your content is highly relevant and authoritative for a
+                                        specific
+                                        search query.
+
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="assets/img/course-details-tab-1.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-28">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>We build your brand's credibility and authority across the web, earning
+                                        high-quality backlinks that boost your search rankings.</h3>
+                                    <p class="fst-italic">Off-Page SEO refers to all the actions taken outside of
+                                        your
+                                        own website to influence its search engine rankings. While On-Page SEO
+                                        optimizes
+                                        what's on your site, Off-Page SEO focuses on building your site's authority
+                                        and
+                                        reputation by showing search engines that other credible sources trust your
+                                        content. The most important factor in Off-Page SEO is backlinks—links from
+                                        other
+                                        websites that point back to yours.
+
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="assets/img/course-details-tab-2.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-29">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>We optimize the technical health of your website, ensuring it is fast,
+                                        mobile-friendly, and perfectly understood by search engine crawlers.
+                                    </h3>
+                                    <p class="fst-italic">Technical SEO is the process of optimizing your website's
+                                        technical backend to help search engine crawlers find, crawl, and index your
+                                        pages more effectively. While On-Page and Off-Page SEO focus on content and
+                                        authority, Technical SEO ensures that the fundamental infrastructure of your
+                                        site is sound. It is the silent, behind-the-scenes work that is absolutely
+                                        crucial for your site to even have a chance to rank.
+
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="assets/img/course-details-tab-3.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Cource Details Tabs Section -->
+
+    <!-- ======= Cource Details Section ======= -->
+    <section id="service-details-8" class="page hidden">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <img src="assets/img/web.jpg" class="img-fluid" alt="" style="width: 1100px; height: 533px;">
+                    <h3>The Future of Intelligence: AI & Machine Learning</h3>
+                    <p>
+                        Artificial Intelligence (AI) and Machine Learning (ML) are not just buzzwords; they are
+                        transformative technologies that enable software to think, learn, and act with a level of
+                        intelligence once exclusive to humans. While AI is the broad concept of creating intelligent
+                        machines, ML is a specific application of AI that gives systems the ability to learn from
+                        data
+                        without being explicitly programmed. We leverage these powerful technologies to build
+                        customized
+                        software that learns from your unique data, anticipates your needs, and solves your most
+                        complex
+                        business challenges.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+
+                    <!-- <div class="course-info d-flex justify-content-between align-items-center">
+                        <h5>Trainer</h5>
+                        <p><a href="#">Walter White</a></p>
+                    </div>
+
+                    <div class="course-info d-flex justify-content-between align-items-center">
+                        <h5>Course Fee</h5>
+                        <p>$165</p>
+                    </div>
+
+                    <div class="course-info d-flex justify-content-between align-items-center">
+                        <h5>Available Seats</h5>
+                        <p>30</p>
+                    </div>
+
+                    <div class="course-info d-flex justify-content-between align-items-center">
+                        <h5>Schedule</h5>
+                        <p>5.00 pm - 7.00 pm</p>
+                    </div> -->
+
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Cource Details Section -->
+
+    <!-- ======= Cource Details Tabs Section ======= -->
+    <section id="cource-details-tabs" class="cource-details-tabs">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row">
+                <div class="col-lg-3">
+                    <ul class="nav nav-tabs flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-30">Predictive
+                                Analytics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-31">Intelligent Automation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-32">Natural Language Processing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-33">Computer Vision</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-34">Recommendation Engines</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-9 mt-4 mt-lg-0">
+                    <div class="tab-content">
+                        <div class="tab-pane active show" id="tab-30">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>We build intelligent models that analyze historical data to forecast future
+                                        trends and outcomes, empowering proactive, confident decision-making.</h3>
+                                    <p class="fst-italic">Predictive Analytics is a branch of data analytics that
+                                        uses
+                                        statistical algorithms and machine learning techniques to identify the
+                                        likelihood of future outcomes based on historical data. While descriptive
+                                        analytics tells you what has happened, predictive analytics tells you what
+                                        is
+                                        likely to happen. By turning your data from a record of the past into a
+                                        powerful
+                                        forecast of the future, we empower your business to move from a reactive to
+                                        a
+                                        proactive strategy.</p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="assets/img/course-details-tab-1.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-31">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>We use AI and Machine Learning to automate complex, decision-based tasks,
+                                        freeing up your team for more strategic, high-value work..</h3>
+                                    <p class="fst-italic">Intelligent Automation (IA) is the next evolution of
+                                        business
+                                        process automation. While traditional automation follows a rigid, rule-based
+                                        set
+                                        of instructions, intelligent automation uses Artificial Intelligence (AI)
+                                        and
+                                        Machine Learning (ML) to handle tasks that require judgment, adaptation, and
+                                        complex decision-making. These systems can learn from your data, interpret
+                                        nuances, and perform tasks that were once only possible for humans.</p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="assets/img/course-details-tab-2.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-32">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>We build intelligent systems that can understand, interpret, and generate
+                                        human
+                                        language to unlock valuable insights from unstructured text data.
+                                    </h3>
+                                    <p class="fst-italic">Natural Language Processing (NLP) is a branch of
+                                        Artificial
+                                        Intelligence (AI) that gives computers the ability to understand and process
+                                        human language, both spoken and written. The vast majority of business data
+                                        today exists in an unstructured format, such as emails, social media
+                                        comments,
+                                        customer reviews, and support tickets. NLP is the key that unlocks the value
+                                        hidden within this text, allowing businesses to gain deep insights and
+                                        automate
+                                        complex, language-based tasks.
+
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="assets/img/course-details-tab-3.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-33">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3> We build intelligent systems that can "see" and interpret images and
+                                        videos,
+                                    </h3>
+                                    <p class="fst-italic">Computer Vision is a field of Artificial Intelligence (AI)
+                                        that enables computers to gain a high-level understanding from digital
+                                        images
+                                        and videos. It is the technology that allows software to "see" and interpret
+                                        the
+                                        world around it, just like a human eye. By teaching machines to recognize,
+                                        classify, and track objects, we can automate complex visual tasks, improve
+                                        quality control, and unlock valuable insights from visual data.</p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="assets/img/course-details-tab-4.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-34">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>We build intelligent systems that analyze user behavior to provide
+                                        personalized
+                                        product, content, and service recommendations.</h3>
+                                    <p class="fst-italic">A Recommendation Engine is a type of data filtering and
+                                        machine learning system that predicts what a user might be interested in.
+                                        Think
+                                        of it as a personal shopper for the digital world. By analyzing a user's
+                                        past
+                                        behavior (e.g., what they've purchased, viewed, or rated), along with the
+                                        behavior of similar users, a recommendation engine can provide highly
+                                        personalized suggestions that increase engagement, drive sales, and enhance
+                                        the
+                                        overall user experience.
+
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="assets/img/course-details-tab-4.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Cource Details Tabs Section -->
+
+    <!-- ======= Cource Details Section ======= -->
+    <section id="service-details-9" class="page hidden">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <img src="assets/img/web.jpg" class="img-fluid" alt="" style="width: 1100px; height: 533px;">
+                    <h3>Bridging the Gap: DevOps & Automation</h3>
+                    <p>
+                        DevOps is a cultural and professional movement that combines software development (Dev) and
+                        IT
+                        operations (Ops). Its goal is to shorten the systems development lifecycle and provide
+                        continuous delivery with high software quality. At its core, DevOps is about breaking down
+                        the
+                        silos between these two teams and fostering a culture of communication, collaboration, and,
+                        most
+                        importantly, automation.
+
+
+                    </p>
+                </div>
+                <div class="col-lg-4">
+
+                    <!-- <div class="course-info d-flex justify-content-between align-items-center">
+                        <h5>Trainer</h5>
+                        <p><a href="#">Walter White</a></p>
+                    </div>
+
+                    <div class="course-info d-flex justify-content-between align-items-center">
+                        <h5>Course Fee</h5>
+                        <p>$165</p>
+                    </div>
+
+                    <div class="course-info d-flex justify-content-between align-items-center">
+                        <h5>Available Seats</h5>
+                        <p>30</p>
+                    </div>
+
+                    <div class="course-info d-flex justify-content-between align-items-center">
+                        <h5>Schedule</h5>
+                        <p>5.00 pm - 7.00 pm</p>
+                    </div> -->
+
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Cource Details Section -->
+
+    <!-- ======= Cource Details Tabs Section ======= -->
+    <section id="cource-details-tabs" class="cource-details-tabs">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row">
+                <div class="col-lg-3">
+                    <ul class="nav nav-tabs flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-35">Continuous
+                                Integration &
+                                Continuous Delivery </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-36">Infrastructure as Code</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-37">Automated Testing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-38">Monitoring and Logging</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-9 mt-4 mt-lg-0">
+                    <div class="tab-content">
+                        <div class="tab-pane active show" id="tab-35">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3> We automate the build, test, and deployment of your code to deliver faster,
+                                        more reliable software.</h3>
+                                    <p class="fst-italic">Continuous Integration (CI) and Continuous Delivery (CD)
+                                        are
+                                        the foundational practices of modern DevOps. This methodology automates and
+                                        monitors the entire software development lifecycle, from the moment a
+                                        developer
+                                        writes a line of code to its final deployment in a production environment.
+                                        The
+                                        goal of a CI/CD pipeline is to accelerate the development cycle, improve
+                                        code
+                                        quality, and make the entire release process more reliable and predictable.
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="assets/img/course-details-tab-1.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-36">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>We manage and provision your IT infrastructure using code, ensuring your
+                                        environments are scalable, consistent, and reproducible.</h3>
+                                    <p class="fst-italic">Infrastructure as Code (IaC) is a core principle of modern
+                                        DevOps. It is the practice of managing and provisioning your IT
+                                        infrastructure—including servers, networks, databases, and more—through code
+                                        and
+                                        automation, rather than through manual processes. Instead of manually
+                                        clicking
+                                        through a cloud provider's console, we write a script that defines your
+                                        infrastructure, which can then be deployed repeatedly and reliably.</p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="assets/img/course-details-tab-2.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-37">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>We embed automated tests into your development lifecycle to ensure
+                                        high-quality
+                                        software and reduce bugs before they reach your users.
+                                    </h3>
+                                    <p class="fst-italic">Automated Testing is the practice of using software to run
+                                        tests and compare the actual outcome to the expected outcome. In a modern
+                                        DevOps
+                                        environment, it is a crucial component that ensures speed, reliability, and
+                                        quality. Instead of relying on manual, time-consuming checks, automated
+                                        testing
+                                        provides a fast, repeatable, and scalable way to validate your code and find
+                                        bugs early in the development process.</p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="assets/img/course-details-tab-3.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-38">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3> We provide real-time visibility into your systems, enabling you to
+                                        proactively
+                                        identify issues and ensure a flawless user experience</h3>
+                                    <p class="fst-italic">In a modern DevOps environment, Monitoring and Logging are
+                                        the
+                                        crucial practices that provide insight into the health, performance, and
+                                        reliability of your applications and infrastructure. They are the "eyes and
+                                        ears" of your system, allowing you to see what is happening in real time and
+                                        "hear" the story of what happened if something goes wrong. Together, they
+                                        enable
+                                        a shift from a reactive to a proactive strategy, allowing you to find and
+                                        fix
+                                        issues before they impact your users.
+
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="assets/img/course-details-tab-4.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Cource Details Tabs Section -->
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>AskAI</h3>
+                        <p>
+                            sector no.34, Plot no.305,<br> near Bhavans school,<br> chinchbhawan, Nagpur,<br>
+                            Maharashtra 440025<br>
+                            India <br><br>
+                            <strong>Phone:</strong> +91 7350789237<br>
+                            <strong>Email:</strong> asktechsolution25@gmail.com<br>
+                                        
+                        </p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="services.html">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="services.html#service-details-1">Real
+                                    Time Project Development</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="services.html#service-details-2">AI Based
+                                    Customized Software</a>
+                            </li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="services.html#service-details-7">Search
+                                    Engine Optimization</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="services.html#service-details-8">Al &
+                                    machine learning</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="services.html#service-details-9">DevOps &
+                                    Automation</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Join Our Newsletter</h4>
+                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-md-flex py-4">
+
+            <div class="me-md-auto text-center text-md-start">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>AskAI</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    Designed by <a href="#">AskAI</a>
+                </div>
+            </div>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
